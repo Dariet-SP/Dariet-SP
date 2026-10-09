@@ -18,7 +18,7 @@ Es más macizo y resistente, en acero inoxidable de grado médico. <break time="
 
 Y su mango ergonómico te da un agarre firme, para una medida precisa. <break time="0.6s" />
 
-Calidad certificada, un año de garantía... y a solo cincuenta y cinco soles. <break time="0.8s" />
+Calidad certificada y un año de garantía. <break time="0.5s" /> Un instrumento hecho para durar... por ciento cinco soles. <break time="0.8s" />
 
 Pro-med. Distribuido en el Perú por Orthoplace.
 ```
@@ -34,8 +34,8 @@ Pro-med. Distribuido en el Perú por Orthoplace.
 | 3 | 8–13 s | Sus puntas son fijas: no se mueven, no se doblan, y te dan siempre la altura exacta. | Macro a las puntas. Palabras que entran al ritmo de la voz: **NO SE MUEVE. NO SE DOBLA. EXACTO.** |
 | 4 | 13–17 s | Es más macizo y resistente, en acero inoxidable de grado médico. | Barrido de luz por el mango mostrando el grosor. **MACIZO · ACERO GRADO MÉDICO** |
 | 5 | 17–21 s | Y su mango ergonómico te da un agarre firme, para una medida precisa. | Toma del mango, alturas grabadas (3.5 · 4.0 · 4.5 · 5.0). |
-| 6 | 21–27 s | Calidad certificada, un año de garantía… y a solo cincuenta y cinco soles. | Sellos ISO · CE · FDA, **1 AÑO DE GARANTÍA** y precio grande: **S/ 55** |
-| 7 | 27–31 s | Pro-med. Distribuido en el Perú por Orthoplace. | Logo PROMED + Orthoplace · orthoplaceonline.com |
+| 6 | 21–28 s | Calidad certificada y un año de garantía. Un instrumento hecho para durar… por ciento cinco soles. | Sellos ISO · CE · FDA, **1 AÑO DE GARANTÍA** y precio grande: **S/ 105** |
+| 7 | 28–32 s | Pro-med. Distribuido en el Perú por Orthoplace. | Logo PROMED + Orthoplace · orthoplaceonline.com |
 
 ---
 

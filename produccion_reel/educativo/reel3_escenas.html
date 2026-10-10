@@ -1,0 +1,161 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:300;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-300-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:800;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+:root{--w:#fff;--lb:#cfe6ff;--pink:#ff9cc8;--mut:#d6e4f6}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:M,sans-serif;color:var(--w);
+  background:linear-gradient(170deg,#6a9ad6 0%,#3a6db3 50%,#24508f 100%)}
+.a{position:absolute}
+.scene{position:absolute;inset:0;opacity:0}
+.eb{position:absolute;font-weight:700;font-size:30px;letter-spacing:.34em;color:var(--pink)}
+.t1{position:absolute;font-weight:300;font-size:104px;line-height:1.02;letter-spacing:-.01em}
+.t1 b{font-weight:800}
+.t2{position:absolute;font-weight:500;font-size:40px;line-height:1.35;color:var(--mut)}
+.prod{position:absolute;transform-origin:center center}
+.prod img{display:block;width:100%;height:100%;filter:drop-shadow(0 30px 38px rgba(8,24,60,.5))}
+.sweep{position:absolute;inset:0;mix-blend-mode:screen;-webkit-mask-size:100% 100%;-webkit-mask-repeat:no-repeat;opacity:0;
+  background:linear-gradient(100deg,transparent 0%,transparent 42%,rgba(255,255,255,.75) 50%,transparent 58%,transparent 100%);background-size:300% 100%;background-repeat:no-repeat}
+.row{position:absolute;left:560px;display:flex;align-items:baseline;gap:18px}
+.row .n{font-weight:300;font-size:118px;line-height:1}
+.row .u{font-weight:500;font-size:34px;color:var(--lb);letter-spacing:.1em}
+.rule{position:absolute;height:3px;background:rgba(255,255,255,.35);transform-origin:left center}
+.pill{position:absolute;border:2px solid rgba(255,255,255,.8);border-radius:999px;padding:16px 0;width:212px;text-align:center;font-weight:700;font-size:28px;letter-spacing:.06em}
+#glow{position:absolute;width:1600px;height:1600px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.26),rgba(255,255,255,0) 62%)}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,transparent 50%,rgba(10,30,70,.32) 100%)}
+#grain{position:absolute;left:-200px;top:-200px;width:1480px;height:2320px;background:url(grain.png);background-size:540px 960px;opacity:.045;mix-blend-mode:overlay}
+.ring{position:absolute;left:540px;top:1205px;width:400px;height:400px;margin:-200px 0 0 -200px;border-radius:50%;border:6px solid rgba(150,210,255,.9);opacity:0}
+#bburst{position:absolute;left:540px;top:1205px;width:1300px;height:1300px;margin:-650px 0 0 -650px;border-radius:50%;
+  background:radial-gradient(circle,rgba(120,195,255,.95) 0%,rgba(60,150,255,.55) 22%,rgba(40,110,230,.18) 45%,rgba(40,110,230,0) 66%);opacity:0;mix-blend-mode:screen}
+#rays{position:absolute;left:540px;top:1205px;width:1800px;height:1800px;margin:-900px 0 0 -900px;opacity:0;mix-blend-mode:screen;
+  background:repeating-conic-gradient(from 0deg,rgba(160,215,255,.22) 0deg 4deg,rgba(160,215,255,0) 4deg 18deg);
+  -webkit-mask-image:radial-gradient(circle,#000 0%,rgba(0,0,0,.6) 30%,transparent 62%)}
+</style></head><body>
+<div id="glow"></div>
+
+<!-- A · precisión y consistencia (10.4–15.0) -->
+<div class="scene" id="sA">
+  <div class="eb" id="a0" style="left:80px;top:300px">PROMED</div>
+  <div class="t1" id="a1" style="left:76px;top:360px;font-size:86px">Precisión<br><b>y consistencia</b></div>
+  <div class="t2" id="a2" style="left:80px;top:580px;width:560px">La base de un tratamiento predecible.</div>
+  <div class="prod" id="pA" style="left:800px;top:300px;width:202px;height:1700px"><img src="user_inst0_v.png"><div class="sweep" style="-webkit-mask-image:url(user_inst0_v.png)"></div></div>
+</div>
+
+<!-- B · dos versiones (15.0–24.9) -->
+<div class="scene" id="sB">
+  <div class="eb" id="b0" style="left:80px;top:270px">DOS VERSIONES</div>
+  <div class="t1" id="b1" style="left:76px;top:330px;font-size:96px">4 alturas<br><b>cada una</b></div>
+  <div class="prod" id="p0" style="left:0;top:0;width:202px;height:1700px"><img src="user_inst0_v.png"><div class="sweep" style="-webkit-mask-image:url(user_inst0_v.png)"></div></div>
+  <div class="prod" id="p1" style="left:0;top:0;width:231px;height:1700px"><img src="user_inst1_v.png"><div class="sweep" style="-webkit-mask-image:url(user_inst1_v.png)"></div></div>
+  <div class="eb" id="v1t" style="left:560px;top:600px">VERSIÓN 1</div>
+  <div class="row" id="v1a" style="top:670px"><span class="n">3.5</span><span class="u">MM</span></div>
+  <div class="row" id="v1b" style="top:820px"><span class="n">4.0</span><span class="u">MM</span></div>
+  <div class="row" id="v1c" style="top:970px"><span class="n">4.5</span><span class="u">MM</span></div>
+  <div class="row" id="v1d" style="top:1120px"><span class="n">5.0</span><span class="u">MM</span></div>
+  <div class="eb" id="v2t" style="left:560px;top:600px">VERSIÓN 2</div>
+  <div class="row" id="v2a" style="top:670px"><span class="n">5.0</span><span class="u">MM</span></div>
+  <div class="row" id="v2b" style="top:820px"><span class="n">5.5</span><span class="u">MM</span></div>
+  <div class="row" id="v2c" style="top:970px"><span class="n">6.0</span><span class="u">MM</span></div>
+  <div class="row" id="v2d" style="top:1120px"><span class="n">6.5</span><span class="u">MM</span></div>
+  <div class="a" id="slot" style="left:560px;top:1300px;font-weight:700;font-size:30px;letter-spacing:.2em;color:var(--lb)">SLOT .022"</div>
+</div>
+
+<!-- C · mango, acero, calidad (24.9–29.4) -->
+<div class="scene" id="sC">
+  <div class="prod" id="pC" style="left:-160px;top:520px;width:2600px;height:593px"><img src="user_detail.png"><div class="sweep" style="-webkit-mask-image:url(user_detail.png)"></div></div>
+  <div class="eb" id="c0" style="left:80px;top:290px">MANGO ERGONÓMICO</div>
+  <div class="t1" id="c1" style="left:76px;top:1180px;font-size:84px">Acero inoxidable<br><b>japonés</b></div>
+  <div class="t2" id="c2" style="left:80px;top:1390px">Calidad certificada</div>
+  <div class="pill" id="k1" style="left:80px;top:1470px">ISO 9001</div>
+  <div class="pill" id="k2" style="left:308px;top:1470px">ISO 13485</div>
+  <div class="pill" id="k3" style="left:536px;top:1470px">CE</div>
+  <div class="pill" id="k4" style="left:764px;top:1470px">FDA</div>
+  <div class="a" id="c3" style="left:80px;top:1570px;font-weight:700;font-size:30px;letter-spacing:.2em;color:var(--lb)">1 AÑO DE GARANTÍA</div>
+</div>
+
+<!-- D · precio (29.4–32.0) -->
+<div class="scene" id="sD">
+  <div class="prod" id="pD" style="left:-60px;top:250px;width:1200px;height:536px"><img src="user_hero.png"><div class="sweep" style="-webkit-mask-image:url(user_hero.png)"></div></div>
+  <div id="rays"></div><div id="bburst"></div>
+  <div class="ring" id="rg1"></div><div class="ring" id="rg2"></div>
+  <div class="eb" id="d0" style="left:0;width:1080px;text-align:center;top:930px">SU PRECIO</div>
+  <div class="a" id="d1" style="left:0;width:1080px;text-align:center;top:1010px;font-weight:300;font-size:300px;line-height:1;letter-spacing:-.02em;text-shadow:0 0 60px rgba(90,170,255,.9)"><span style="font-size:.4em;vertical-align:.8em;font-weight:500;margin-right:.06em">S/</span><span style="font-weight:800" id="num">105</span></div>
+</div>
+
+<!-- E · cierre (32.0–end) -->
+<div class="scene" id="sE">
+  <div class="a" id="e1" style="left:200px;top:440px;width:680px;height:600px;background:#fff;border-radius:56px;box-shadow:0 30px 70px rgba(8,24,60,.35);display:flex;align-items:center;justify-content:center"><img src="logo_full.png" style="width:520px"></div>
+  <div class="a" id="e2" style="left:0;top:1140px;width:1080px;text-align:center">
+    <div style="font-weight:700;font-size:28px;letter-spacing:.35em;color:var(--pink)">DISTRIBUIDO EN EL PERÚ POR</div>
+    <div style="font-weight:800;font-size:76px;margin-top:26px">Orthoplace S.A.C.</div>
+    <div style="font-weight:500;font-size:40px;color:var(--mut);margin-top:16px">orthoplaceonline.com</div>
+  </div>
+</div>
+
+<div class="a" id="mark" style="left:70px;top:100px;width:96px;height:96px;background:#fff;border-radius:26px;display:flex;align-items:center;justify-content:center;opacity:0;box-shadow:0 10px 30px rgba(8,24,60,.25)"><img src="logo_mark.png" style="width:56px"></div>
+<div id="vig"></div><div id="grain"></div>
+<script>
+const C=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo=x=>1-Math.pow(1-x,3), eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const $=id=>document.getElementById(id);
+// scene windows (absolute seconds, synced to the ElevenLabs take)
+const SC={sA:[10.4,15.0],sB:[15.0,24.85],sC:[24.85,29.35],sD:[29.35,32.0],sE:[32.0,99]};
+function fade(el,t0,t,{dy=28,dur=.7,blur=6,sc=1}={}){
+  const p=eo(C((t-t0)/dur)); el.style.opacity=C((t-t0)/(dur*.7));
+  el.style.transform=`translateY(${(1-p)*dy}px) scale(${sc+(1-sc)*p})`; el.style.filter=blur?`blur(${(1-C(p*1.3))*blur}px)`:'';
+}
+function hide(el,t0,t){el.style.opacity=(+el.style.opacity||0)*(1-C((t-t0)/.35));}
+function sweep(prod,t0,t,dur=1.6){const s=prod.querySelector('.sweep');const p=C((t-t0)/dur);s.style.backgroundPosition=`${110-p*120}% 0`;s.style.opacity=(p>0&&p<1)?1:0;}
+window.render=function(t){
+  for(const [id,[a,b]] of Object.entries(SC)){const v=C((t-a)/.4)*(1-C((t-b)/.35)); const s=$(id); s.style.opacity=v; s.style.display=v>0?'block':'none';}
+  $('glow').style.transform=`translate(${-260+Math.sin(t*.3)*160}px,${160+Math.cos(t*.23)*220}px)`;
+  $('grain').style.transform=`translate(${(Math.floor(t*24)*37)%200}px,${(Math.floor(t*24)*53)%200}px)`;
+  $('mark').style.opacity=C((t-10.4)/.5)*(1-C((t-31.8)/.4));
+  // A
+  {const p=eo(C((t-10.5)/1.4)); $('pA').style.transform=`translateY(${(1-p)*240}px) rotate(${4-4*p}deg)`; $('pA').style.opacity=C((t-10.5)/.5);}
+  sweep($('pA'),11.6,t,1.8);
+  fade($('a0'),10.6,t,{blur:0}); fade($('a1'),10.75,t); fade($('a2'),12.75,t);
+  // B: both side by side, then V1 focus, then V2 focus
+  {
+    const both=[[250,560],[640,560]];           // left x positions for p0/p1 while both visible (top y)
+    const focus=[300,560];                         // focused instrument position
+    const k1=eio(C((t-17.9)/.7)), k2=eio(C((t-21.6)/.7));
+    const inB=eo(C((t-15.1)/1.0));
+    // p0: in with both, then to focus, then exit left
+    let x0=both[0][0]+(focus[0]-both[0][0])*k1 - 520*k2, y0=both[0][1]+(1-inB)*200;
+    let x1=both[1][0]+(1200-both[1][0])*k1, y1=both[1][1]+(1-inB)*200;
+    x1 = k2>0 ? (1200+(focus[0]-1200)*k2) : x1;
+    $('p0').style.transform=`translate(${x0}px,${y0}px)`; $('p0').style.opacity=C((t-15.1)/.5)*(1-k2);
+    $('p1').style.transform=`translate(${x1}px,${y1}px)`; $('p1').style.opacity=C((t-15.25)/.5)*(k2>0?C(k2*1.5):(1-k1*.9));
+    sweep($('p0'),18.1,t,1.5); sweep($('p1'),21.9,t,1.5);
+    fade($('b0'),15.2,t,{blur:0}); fade($('b1'),15.35,t); hide($('b0'),17.85,t); hide($('b1'),17.85,t);
+    fade($('v1t'),18.05,t,{blur:0});
+    const v1=[19.1,19.75,20.25,20.85];['v1a','v1b','v1c','v1d'].forEach((id,i)=>{fade($(id),v1[i],t,{dy:0,sc:.85,blur:8,dur:.5});});
+    ['v1t','v1a','v1b','v1c','v1d'].forEach(id=>hide($(id),21.55,t));
+    fade($('v2t'),21.8,t,{blur:0});
+    const v2=[22.7,23.15,23.55,24.0];['v2a','v2b','v2c','v2d'].forEach((id,i)=>{fade($(id),v2[i],t,{dy:0,sc:.85,blur:8,dur:.5});});
+    fade($('slot'),24.2,t,{dy:10,blur:0});
+  }
+  // C: slow pan along the instrument (right cut end always off-frame)
+  {const p=C((t-24.85)/4.6); $('pC').style.transform=`translateX(${-40-620*eio(p)}px) rotate(-9deg)`; $('pC').style.opacity=C((t-24.9)/.4);}
+  sweep($('pC'),25.4,t,2.0);
+  fade($('c0'),25.05,t,{blur:0}); fade($('c1'),26.25,t); fade($('c2'),27.7,t,{dy:16,blur:0});
+  ['k1','k2','k3','k4'].forEach((k,i)=>fade($(k),27.9+i*.12,t,{dy:0,sc:.85,blur:0,dur:.5})); fade($('c3'),28.5,t,{dy:12,blur:0});
+  // D: price with blue burst
+  {const p=eo(C((t-29.4)/.9)); $('pD').style.transform=`translateY(${(1-p)*-60}px) scale(${.95+.05*p})`; $('pD').style.opacity=C((t-29.4)/.5);}
+  sweep($('pD'),29.6,t,1.6);
+  fade($('d0'),29.55,t,{blur:0});
+  const tp=30.15;
+  {const p=C((t-tp)/.55); $('d1').style.opacity=C((t-tp)/.25); $('d1').style.transform=`scale(${.82+.18*eo(p)})`; $('d1').style.filter=`blur(${(1-C(p*1.5))*14}px)`;}
+  {const u=t-tp; const b=$('bburst'); b.style.opacity=u<0?0:Math.min(1,u/.15)*Math.max(.35,1-u/1.4); b.style.transform=`scale(${.3+.7*eo(C(u/.6))})`;
+   const r=$('rays'); r.style.opacity=u<0?0:Math.min(.9,u/.2)*Math.max(.25,1-u/1.8); r.style.transform=`rotate(${u*14}deg) scale(${.6+.4*eo(C(u/.8))})`;
+   [[ 'rg1',0],['rg2',.22]].forEach(([id,d])=>{const v=u-d; const el=$(id); el.style.opacity=v<0?0:(1-C(v/1.1))*.95; el.style.transform=`scale(${.4+3.2*eo(C(v/1.1))})`;});}
+  // E
+  fade($('e1'),32.1,t,{dy:0,sc:.9,blur:12,dur:.8}); fade($('e2'),32.95,t);
+};
+window.render(0);
+</script>
+</body></html>

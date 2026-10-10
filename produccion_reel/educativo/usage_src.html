@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<meta name="viewport" content="width=1080,height=1920">
+<title>Cómo se usa</title>
+<style>
+@font-face{font-family:M;font-weight:500;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2) format('woff2')}
+@font-face{font-family:M;font-weight:600;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-600-normal.woff2) format('woff2')}
+@font-face{font-family:M;font-weight:700;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2) format('woff2')}
+@font-face{font-family:M;font-weight:800;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2) format('woff2')}
+@font-face{font-family:M;font-weight:900;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2) format('woff2')}
+:root{--pink:#ff9cc8;--lb:#cfe6ff;--brand:#2a69b0}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#3a6db3}
+body{position:relative;font-family:M,sans-serif;color:#fff;
+  background:linear-gradient(170deg,#6a9ad6 0%,#3a6db3 50%,#24508f 100%)}
+.a{position:absolute}
+#glow{left:-260px;top:140px;width:1600px;height:1600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.24),rgba(255,255,255,0) 62%)}
+#vig{left:0;top:0;width:1080px;height:1920px;background:radial-gradient(ellipse at 50% 45%,transparent 50%,rgba(10,30,70,.32) 100%)}
+#hdr{left:0;top:252px;width:1080px;text-align:center}
+#eb{font-weight:800;font-size:28px;line-height:1;letter-spacing:.32em;color:var(--pink);padding-left:.32em}
+#ttl{font-weight:900;font-size:84px;line-height:1;letter-spacing:-.005em;margin-top:16px;text-transform:uppercase;
+  text-shadow:0 4px 18px rgba(10,30,70,.22)}
+#card{left:60px;top:412px;width:960px;height:960px;border-radius:48px;overflow:hidden;background:#eef3f8;
+  box-shadow:0 40px 80px rgba(8,26,64,.36),0 8px 22px rgba(8,26,64,.16)}
+#card svg{position:absolute;left:0;top:0}
+#caps{left:60px;top:1404px;width:960px;height:190px}
+.cap{position:absolute;left:0;top:0;width:960px;text-align:center;opacity:0}
+.cap .k{display:inline-block;font-weight:800;font-size:26px;line-height:1;letter-spacing:.3em;color:var(--pink);padding-left:.3em}
+.cap .m{font-weight:800;font-size:50px;line-height:1.14;letter-spacing:-.005em;margin-top:16px;text-shadow:0 3px 14px rgba(10,30,70,.28)}
+.cap .m b{color:var(--pink);font-weight:900}
+svg text{font-family:M,sans-serif}
+.eng{font-family:'Liberation Sans',Arial,Helvetica,sans-serif;font-weight:400}
+</style></head>
+<body>
+<div class="a" id="glow"></div>
+<div class="a" id="vig"></div>
+
+<div class="a" id="hdr"><div id="eb">POSICIONADOR RECTO PROMED</div><div id="ttl">Cómo se usa</div></div>
+
+<div class="a" id="card">
+<svg id="sv" width="960" height="960" viewBox="0 0 960 960" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="panelG" x1="0" y1="0" x2="0" y2="960" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#f5f8fc"/><stop offset=".6" stop-color="#ebf1f8"/><stop offset="1" stop-color="#dfe8f2"/>
+  </linearGradient>
+  <radialGradient id="panelHi" cx="480" cy="420" r="640" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".85"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- enamel (world mm) -->
+  <linearGradient id="enamelV" x1="0" y1="-12.2" x2="0" y2="0.1" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#e6d6ba"/><stop offset=".2" stop-color="#f1e7d5"/><stop offset=".5" stop-color="#faf6ef"/>
+    <stop offset=".8" stop-color="#f8f6f2"/><stop offset=".93" stop-color="#e8edf1"/><stop offset="1" stop-color="#d6dfe7"/>
+  </linearGradient>
+  <linearGradient id="enamelH" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8a7656" stop-opacity=".34"/><stop offset=".14" stop-color="#8a7656" stop-opacity=".1"/>
+    <stop offset=".32" stop-color="#8a7656" stop-opacity="0"/><stop offset=".7" stop-color="#8a7656" stop-opacity="0"/>
+    <stop offset=".88" stop-color="#8a7656" stop-opacity=".1"/><stop offset="1" stop-color="#8a7656" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="incisalT" x1="0" y1="-3.2" x2="0" y2="0.1" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#a9bccd" stop-opacity="0"/><stop offset=".7" stop-color="#a9bccd" stop-opacity=".2"/>
+    <stop offset="1" stop-color="#93a9bd" stop-opacity=".4"/>
+  </linearGradient>
+  <radialGradient id="specG" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="toothSh" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="0.18" stdDeviation="0.22" flood-color="#5c6f86" flood-opacity=".26"/>
+  </filter>
+
+  <!-- gingiva (world mm) -->
+  <linearGradient id="gumG" x1="0" y1="-22" x2="0" y2="-5.8" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#d9798b"/><stop offset=".4" stop-color="#e48c9b"/>
+    <stop offset=".7" stop-color="#eda0ab"/><stop offset="1" stop-color="#f1a8b2"/>
+  </linearGradient>
+  <clipPath id="gumClip" clipPathUnits="userSpaceOnUse"><path id="gumC"/></clipPath>
+  <filter id="gumSh" x="-10%" y="-10%" width="120%" height="140%">
+    <feDropShadow dx="0" dy="0.2" stdDeviation="0.16" flood-color="#7a2d3a" flood-opacity=".30"/>
+  </filter>
+  <filter id="bandBlur" x="-5%" y="-20%" width="110%" height="140%"><feGaussianBlur stdDeviation="0.16"/></filter>
+
+  <!-- bracket metal -->
+  <linearGradient id="wingG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#dfe5eb"/>
+    <stop offset=".62" stop-color="#b4bec9"/><stop offset="1" stop-color="#8d98a5"/>
+  </linearGradient>
+  <linearGradient id="wingG2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f2f5f8"/><stop offset=".4" stop-color="#c6ced7"/>
+    <stop offset=".75" stop-color="#e9edf1"/><stop offset="1" stop-color="#9aa5b1"/>
+  </linearGradient>
+  <linearGradient id="padG" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#c9d0d8"/><stop offset="1" stop-color="#9aa4b0"/>
+  </linearGradient>
+  <linearGradient id="slotG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1c232c"/><stop offset=".55" stop-color="#36414e"/><stop offset="1" stop-color="#5f6b78"/>
+  </linearGradient>
+  <linearGradient id="bodyG" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7e8996"/><stop offset=".5" stop-color="#a7b1bc"/><stop offset="1" stop-color="#7e8996"/>
+  </linearGradient>
+  <linearGradient id="insG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#8f9aa6"/><stop offset=".45" stop-color="#c9d1d9"/><stop offset="1" stop-color="#6f7a87"/>
+  </linearGradient>
+  <linearGradient id="insFade" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#1c232c" stop-opacity="0"/><stop offset="1" stop-color="#1c232c" stop-opacity=".55"/>
+  </linearGradient>
+  <filter id="brSh" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0.1" dy="0.22" stdDeviation="0.16" flood-color="#3d3526" flood-opacity=".36"/>
+  </filter>
+
+  <!-- instrument steel (instrument local mm: blade tip = 0,0 ; y down) -->
+  <linearGradient id="stV" x1="0" y1="-4.5" x2="0" y2="4.0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#f6f8fa"/><stop offset=".06" stop-color="#d3d9e0"/>
+    <stop offset=".3" stop-color="#e7ebef"/><stop offset=".52" stop-color="#c7ced6"/>
+    <stop offset=".74" stop-color="#dde2e8"/><stop offset=".93" stop-color="#b3bcc6"/><stop offset="1" stop-color="#99a3ae"/>
+  </linearGradient>
+  <linearGradient id="stH" x1="-40" y1="0" x2="0" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#3b4654" stop-opacity=".22"/><stop offset=".55" stop-color="#3b4654" stop-opacity=".04"/>
+    <stop offset=".8" stop-color="#ffffff" stop-opacity=".08"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="bladeV" x1="0" y1="-0.27" x2="0" y2="0.27" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#e3e8ed"/><stop offset=".7" stop-color="#b9c2cc"/><stop offset="1" stop-color="#8e99a5"/>
+  </linearGradient>
+  <linearGradient id="sweepG" x1="-3" y1="0" x2="3" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".5" stop-color="#fff" stop-opacity=".55"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="engGlow" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#ff5fa6" stop-opacity=".62"/><stop offset=".55" stop-color="#ff7fb6" stop-opacity=".28"/><stop offset="1" stop-color="#ff9cc8" stop-opacity="0"/>
+  </radialGradient>
+  <clipPath id="headClip" clipPathUnits="userSpaceOnUse"><path id="headClipP"/></clipPath>
+  <!-- blade vs. engaged bracket: outside the bracket footprint / inside it -->
+  <clipPath id="bladeOutClip" clipPathUnits="userSpaceOnUse"><path id="bladeOutP" clip-rule="evenodd" d="M-90,-30 H40 V30 H-90Z"/></clipPath>
+  <clipPath id="bladeInClip" clipPathUnits="userSpaceOnUse"><rect id="bladeInR" x="100" y="100" width="1" height="1"/></clipPath>
+  <!-- wide view: the bar fades out behind the head so it never hides the neighbouring teeth -->
+  <linearGradient id="barFadeG" gradientUnits="userSpaceOnUse" x1="-80" y1="0" x2="-79" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#fff" stop-opacity="1"/>
+  </linearGradient>
+  <mask id="barFade" maskUnits="userSpaceOnUse" maskContentUnits="userSpaceOnUse" x="-60" y="-12" width="70" height="24">
+    <rect x="-60" y="-12" width="70" height="24" fill="url(#barFadeG)"/>
+  </mask>
+  <filter id="instSh" x="-20%" y="-60%" width="140%" height="220%">
+    <feDropShadow id="instShF" dx="0.12" dy="0.22" stdDeviation="0.18" flood-color="#1d2a3c" flood-opacity=".34"/>
+  </filter>
+  <filter id="instShI" x="-20%" y="-60%" width="140%" height="220%">
+    <feDropShadow dx="0.1" dy="0.28" stdDeviation="0.22" flood-color="#1d2a3c" flood-opacity=".28"/>
+  </filter>
+  <filter id="bladeSh" x="-40%" y="-200%" width="180%" height="500%">
+    <feDropShadow id="bladeShF" dx="0.08" dy="0.14" stdDeviation="0.1" flood-color="#1d2a3c" flood-opacity=".3"/>
+  </filter>
+
+  <!-- veil mask -->
+  <radialGradient id="wmg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#000"/><stop offset=".64" stop-color="#000"/>
+    <stop offset=".88" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff"/>
+  </radialGradient>
+  <mask id="wm" maskUnits="userSpaceOnUse" x="0" y="0" width="960" height="960">
+    <rect width="960" height="960" fill="url(#wmg)"/>
+  </mask>
+  <radialGradient id="pinkGlow" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#ff5fa6" stop-opacity=".5"/><stop offset="1" stop-color="#ff5fa6" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softSh" x="-20%" y="-50%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1b3a66" flood-opacity=".22"/>
+  </filter>
+  <filter id="panelSh" x="-10%" y="-20%" width="120%" height="140%">
+    <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#1b3a66" flood-opacity=".14"/>
+  </filter>
+  <clipPath id="insetClip"><rect x="40" y="590" width="880" height="344" rx="30"/></clipPath>
+</defs>
+
+<rect width="960" height="960" fill="url(#panelG)"/>
+<rect width="960" height="960" fill="url(#panelHi)"/>
+
+<!-- world layer A: teeth -->
+<g id="worldA">
+  <g id="teeth"></g>
+</g>
+<!-- tooth long axis, crown part (behind brackets) -->
+<g id="axisCrown" opacity="0"><line id="axL" stroke="#2a69b0" stroke-width="2.4" stroke-dasharray="4 9" stroke-linecap="round"/></g>
+<!-- world layer B: brackets -->
+<g id="worldB"></g>
+<!-- neighbour veil (teeth + brackets only; gingiva stays crisp) -->
+<rect id="wash" width="960" height="960" fill="#eef3f8" mask="url(#wm)" opacity="0"/>
+<!-- world layer G: gingiva -->
+<g id="worldG">
+  <path id="gum" fill="url(#gumG)" filter="url(#gumSh)"/>
+  <g clip-path="url(#gumClip)">
+    <path id="gumBand1" fill="none" stroke="#d26c80" stroke-width="1.5" opacity=".42" filter="url(#bandBlur)"/>
+    <path id="gumBand2" fill="none" stroke="#c95f74" stroke-width="0.5" opacity=".38"/>
+  </g>
+  <path id="gumEdge" fill="none" stroke="#b9596d" stroke-width="1.6" vector-effect="non-scaling-stroke" opacity=".85"/>
+</g>
+<!-- tooth long axis, gingival part + label -->
+<g id="axis" opacity="0">
+  <line id="axL2" stroke="#2a69b0" stroke-width="2.4" stroke-dasharray="4 9" stroke-linecap="round"/>
+  <g id="axP"><rect id="axPR" height="46" rx="23" fill="#ffffff" fill-opacity=".94" stroke="#2a69b0" stroke-opacity=".25" stroke-width="1.5"/>
+    <text id="axT" font-size="26" font-weight="800" fill="#24508f" letter-spacing="1.8" text-anchor="middle" dominant-baseline="central">EJE DEL DIENTE</text></g>
+</g>
+<!-- wide view: level references under the instrument -->
+<g id="alignU" opacity="0">
+  <line id="incLine" stroke="#8ea4bd" stroke-width="2.6" stroke-dasharray="10 9"/>
+  <line id="slotLine" stroke="#ff4f9d" stroke-width="3.6" stroke-dasharray="14 9" stroke-linecap="round"/>
+  <g id="pulses"></g>
+</g>
+
+<!-- inset panel (beat 1) -->
+<g id="inset" opacity="0">
+  <rect x="40" y="590" width="880" height="344" rx="30" fill="#ffffff" fill-opacity=".9" stroke="#cfdcea" stroke-width="2" filter="url(#panelSh)"/>
+  <text x="76" y="640" font-size="26" font-weight="800" fill="#24508f" letter-spacing="1.6">DE LA LÁMINA AL HOMBRO = ALTURA</text>
+  <g clip-path="url(#insetClip)"><g id="insetInst"></g></g>
+  <g id="insetAnn"></g>
+</g>
+
+<!-- scene instrument -->
+<g id="instMain"></g>
+
+<!-- annotations (card px) -->
+<g id="ann">
+  <g id="viewLbl" opacity="0"><rect id="viewLblR" x="32" y="30" height="48" rx="24" fill="#ffffff" fill-opacity=".9"/>
+    <text id="viewLblT" x="56" y="54" font-size="26" font-weight="700" fill="#24508f" letter-spacing="2" dominant-baseline="central">VISTA LABIAL · INCISIVO CENTRAL</text></g>
+
+  <g id="slotHi" opacity="0">
+    <rect id="slotHiG" fill="url(#pinkGlow)"/>
+    <rect id="slotHiR" fill="none" stroke="#ff4f9d" stroke-width="3" rx="7"/>
+  </g>
+  <g id="contact" opacity="0">
+    <ellipse id="ctGlow" fill="url(#pinkGlow)"/>
+    <line id="ctLine" stroke="#ff4f9d" stroke-width="4.5" stroke-linecap="round"/>
+    <circle id="ctRing" fill="none" stroke="#ff4f9d" stroke-width="3"/>
+    <circle id="ctDot" r="7" fill="#ff4f9d" stroke="#fff" stroke-width="2.5"/>
+  </g>
+
+  <g id="dim" opacity="0">
+    <line id="ext1" stroke="#2a69b0" stroke-width="2.2" stroke-dasharray="7 7"/>
+    <line id="ext2" stroke="#2a69b0" stroke-width="2.2" stroke-dasharray="7 7"/>
+    <line id="dline" stroke="#2a69b0" stroke-width="3.4" stroke-linecap="round"/>
+    <line id="tick1" stroke="#2a69b0" stroke-width="3.4" stroke-linecap="round"/>
+    <line id="tick2" stroke="#2a69b0" stroke-width="3.4" stroke-linecap="round"/>
+    <path id="arr1" fill="#2a69b0"/>
+    <path id="arr2" fill="#2a69b0"/>
+    <g id="dlab">
+      <g filter="url(#softSh)"><rect width="196" height="76" rx="38" fill="#2a69b0"/></g>
+      <text x="98" y="39" font-size="40" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central">4.0 mm</text>
+    </g>
+    <g id="dpar">
+      <text id="dparT" font-size="26" font-weight="800" fill="#24508f" letter-spacing="1.4"><tspan id="dp1">PARALELA</tspan><tspan id="dp2">AL EJE</tspan></text>
+    </g>
+  </g>
+
+  <g id="align" opacity="0">
+    <g id="wContacts"></g>
+    <g id="chips"></g>
+    <g id="legend" opacity="0">
+      <line x1="150" y1="818" x2="214" y2="818" stroke="#ff4f9d" stroke-width="4" stroke-dasharray="12 8" stroke-linecap="round"/>
+      <text x="230" y="819" font-size="26" font-weight="800" fill="#24508f" letter-spacing="1.5" dominant-baseline="central">LÍNEA DE SLOTS</text>
+      <line x1="530" y1="818" x2="594" y2="818" stroke="#8ea4bd" stroke-width="3" stroke-dasharray="10 8"/>
+      <text x="610" y="819" font-size="26" font-weight="800" fill="#24508f" letter-spacing="1.5" dominant-baseline="central">BORDE INCISAL</text>
+    </g>
+  </g>
+</g>
+</svg>
+</div>
+
+<div class="a" id="caps">
+  <div class="cap" id="c1"><div class="k">ALTURA DEL BRACKET</div><div class="m">Cada bracket,<br>a su altura exacta</div></div>
+  <div class="cap" id="c2"><div class="k">PASO 1</div><div class="m">La lámina entra en el slot<br>del bracket</div></div>
+  <div class="cap" id="c3"><div class="k">PASO 2</div><div class="m">El hombro se alinea<br>con el borde incisal</div></div>
+  <div class="cap" id="c4"><div class="k">RESULTADO</div><div class="m">Altura exacta: <b>4.0 mm</b></div></div>
+  <div class="cap" id="c5"><div class="k">MEDIDA CONSTANTE</div><div class="m">Cabeza fija: la misma medida,<br>del primer al último bracket</div></div>
+</div>
+
+<script>
+(function(){
+const NS='http://www.w3.org/2000/svg';
+const $=id=>document.getElementById(id);
+const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+const eo4=x=>1-Math.pow(1-x,4);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const ei=x=>x*x*x;
+const lerp=(a,b,x)=>a+(b-a)*x;
+function el(tag,attrs,parent,txt){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(txt!==undefined)e.textContent=txt;if(parent)parent.appendChild(e);return e;}
+function set(e,o){for(const k in o)e.setAttribute(k,o[k]);}
+const f3=v=>(+v).toFixed(3);
+let seed=11;const rnd=()=>{seed=(seed*16807)%2147483647;return (seed-1)/2147483646;};
+
+// ---------- closed Catmull-Rom spline -> cubic bezier path
+function crPath(p,closed=true,ten=0.5){
+  const n=p.length;let d=`M${p[0][0]},${p[0][1]}`;
+  const g=i=>closed?p[(i+n)%n]:p[clamp(i,0,n-1)];
+  const m=closed?n:n-1;
+  for(let i=0;i<m;i++){
+    const p0=g(i-1),p1=g(i),p2=g(i+1),p3=g(i+2);
+    const c1=[p1[0]+(p2[0]-p0[0])*ten/3,p1[1]+(p2[1]-p0[1])*ten/3];
+    const c2=[p2[0]-(p3[0]-p1[0])*ten/3,p2[1]-(p3[1]-p1[1])*ten/3];
+    d+=`C${c1[0].toFixed(3)},${c1[1].toFixed(3)} ${c2[0].toFixed(3)},${c2[1].toFixed(3)} ${p2[0].toFixed(3)},${p2[1].toFixed(3)}`;
+  }
+  return d+(closed?'Z':'');
+}
+
+// ================= TEETH (world mm; incisal edge = y 0; up = -y; upper incisors, incisal edge at the bottom)
+const CENTRAL=[[3.5,0.02],[3.98,-0.06],[4.3,-0.45],[4.42,-1.6],[4.38,-3.6],[4.2,-5.8],[3.9,-7.9],[3.6,-9.9],[3.44,-11.8],[3.4,-13.6],
+  [0,-13.9],[-3.4,-13.6],[-3.46,-11.8],[-3.7,-9.9],[-4.08,-7.6],[-4.35,-5.2],[-4.35,-3.2],[-4.12,-1.6],[-3.62,-0.52],[-2.85,-0.08],[-1.2,0.06],[1.4,0.07]];
+const LATERAL=[[2.55,0.0],[3.05,-0.32],[3.28,-1.4],[3.24,-3.5],[3.02,-5.8],[2.7,-7.9],[2.46,-9.8],[2.36,-12.5],[0,-12.9],[-2.36,-12.5],[-2.52,-9.8],[-2.94,-7.3],
+  [-3.26,-4.8],[-3.22,-2.7],[-2.9,-1.15],[-2.25,-0.28],[-1.1,0.02],[1.0,0.04]];
+// lateral, central, central, lateral (patient's right -> left as seen from the front)
+const TEETH=[{x:-12.0,t:'L',m:1,sx:.9},{x:-4.45,t:'C',m:1,sx:1},{x:4.45,t:'C',m:-1,sx:1},{x:12.0,t:'L',m:-1,sx:.9}];
+TEETH.forEach(T=>{T.hw=(T.t==='C'?1.8:1.5);});
+const FOCUS=1, SLOT=-4.0;
+const YB0=[-3.5,-4.6,-4.55,-3.45];       // initial (uncorrected) bracket heights
+const PAD=0.22, PROUD=1.25, INS=0.55;   // pad margin, blade proud of the prongs, blade tip past bracket centre when seated
+TEETH.forEach(T=>{ T.padL=T.x-(T.hw+PAD)*T.sx; T.seat=T.x+INS*T.sx; T.prong=T.seat-PROUD; });
+
+const teethG=$('teeth');
+TEETH.forEach(T=>{
+  const g=el('g',{transform:`translate(${T.x},0) scale(${T.m*T.sx},1)`},teethG);
+  const d=crPath(T.t==='C'?CENTRAL:LATERAL);
+  el('path',{d,fill:'url(#enamelV)',filter:'url(#toothSh)'},g);
+  el('path',{d,fill:'url(#enamelH)'},g);
+  el('path',{d,fill:'url(#incisalT)'},g);
+  const w=T.t==='C'?4.4:3.3;
+  for(const s of [-0.34,0.3]) el('path',{d:`M${s*w},-11.2 C${s*w*1.04},-7.5 ${s*w*1.08},-4.2 ${s*w},-1.7`,fill:'none',stroke:'#b6a27f','stroke-width':0.22,opacity:.1,'stroke-linecap':'round'},g);
+  el('ellipse',{cx:-0.33*w,cy:-6.4,rx:0.55*w*0.42,ry:3.9,fill:'url(#specG)',opacity:.55},g);
+  el('ellipse',{cx:0.38*w,cy:-5.4,rx:0.22*w*0.42*1.6,ry:2.6,fill:'url(#specG)',opacity:.35},g);
+  el('path',{d,fill:'none',stroke:'#a8977a','stroke-width':1.5,'vector-effect':'non-scaling-stroke',opacity:.72},g);
+});
+
+// gingiva: scalloped margin, crisp edge, slightly darker rosy marginal band
+(function(){
+  const pap=[[-17.6,-6.9],[-8.95,-5.9],[0,-6.2],[8.95,-5.9],[17.6,-6.9]];
+  const zen=[[-12.3,-9.7],[-4.85,-10.8],[4.85,-10.8],[12.3,-9.7]];
+  let d=`M-40,-60 L-40,-8.2 L${pap[0][0]-3},-8.4 Q${pap[0][0]-1},-7.6 ${pap[0][0]},${pap[0][1]}`;
+  let hi=`M${pap[0][0]-3},-8.4 Q${pap[0][0]-1},-7.6 ${pap[0][0]},${pap[0][1]}`;
+  for(let i=0;i<4;i++){
+    const A=pap[i],B=pap[i+1],Z=zen[i],w=B[0]-A[0];
+    const s=`C${A[0]+0.1*w},${A[1]-2.6} ${Z[0]-0.33*w},${Z[1]} ${Z[0]},${Z[1]} C${Z[0]+0.33*w},${Z[1]} ${B[0]-0.1*w},${B[1]-2.6} ${B[0]},${B[1]}`;
+    d+=s; hi+=s;
+  }
+  d+=`Q${pap[4][0]+1},-7.6 ${pap[4][0]+3},-8.4 L40,-8.2 L40,-60Z`;
+  hi+=`Q${pap[4][0]+1},-7.6 ${pap[4][0]+3},-8.4 L40,-8.2`;
+  ['gum','gumC'].forEach(id=>$(id).setAttribute('d',d));
+  ['gumBand1','gumBand2','gumEdge'].forEach(id=>$(id).setAttribute('d',hi));
+})();
+
+// ================= BRACKETS (separate world layer, never mirrored, origin = slot centre)
+const worldB=$('worldB');
+const brNodes=TEETH.map(T=>{
+  const g=el('g',{filter:'url(#brSh)'},worldB);
+  const b=el('g',{transform:`scale(${T.sx},1)`},g);
+  const hw=T.hw;
+  el('rect',{x:-hw-PAD,y:-1.98,width:2*hw+2*PAD,height:3.96,rx:0.6,fill:'url(#padG)',stroke:'#7d8894','stroke-width':1,'vector-effect':'non-scaling-stroke'},b);
+  el('rect',{x:-0.5,y:-1.45,width:1.0,height:2.9,rx:0.18,fill:'url(#bodyG)'},b);
+  const ww=hw-0.5;
+  const wing=(x0,y0,flip)=>el('rect',{x:x0,y:y0,width:ww,height:1.44,rx:0.28,fill:flip?'url(#wingG2)':'url(#wingG)',stroke:'#6f7a87','stroke-width':1,'vector-effect':'non-scaling-stroke'},b);
+  wing(-hw,-1.72,0); wing(0.5,-1.72,0); wing(-hw,0.28,1); wing(0.5,0.28,1);
+  for(const x0 of [-hw,0.5]){
+    el('rect',{x:x0+0.12,y:-1.42,width:ww-0.24,height:0.08,fill:'#7d8894',opacity:.55},b);
+    el('rect',{x:x0+0.12,y:1.34,width:ww-0.24,height:0.08,fill:'#7d8894',opacity:.55},b);
+    el('rect',{x:x0+0.18,y:-1.62,width:ww-0.5,height:0.12,rx:0.06,fill:'#fff',opacity:.85},b);
+  }
+  // slot channel (0.022")
+  el('rect',{x:-hw-0.02,y:-0.28,width:2*hw+0.04,height:0.56,fill:'url(#slotG)'},b);
+  // blade lying in the slot (width set per frame)
+  const insPad=el('rect',{x:-hw-PAD,y:-0.27,width:0,height:0.54,fill:'url(#bladeV)'},b);
+  const ins=el('rect',{x:-hw,y:-0.21,width:0,height:0.42,fill:'url(#insG)'},b);
+  const insF=el('rect',{x:-hw,y:-0.21,width:0,height:0.42,fill:'url(#insFade)'},b);
+  // wing undercuts overlapping the slot edges
+  el('rect',{x:-hw,y:-0.3,width:2*hw,height:0.07,fill:'#2a323c',opacity:.55},b);
+  el('rect',{x:-hw,y:0.2,width:2*hw,height:0.05,fill:'#c9d2db',opacity:.6},b);
+  return {g,ins,insPad,insF,T};
+});
+
+// ================= INSTRUMENT HEAD (local mm: blade tip at 0,0, bar toward -x, y down; 4.0 side = +y, 4.5 side = -y)
+const YL=4.0, YU=-4.5, BT=0.27, WP=1.8, NL=YL-WP, NU=YU+WP, XP=-PROUD, CH=0.55, XN=XP-3.2, XH=-8.3, XB=-46;
+const BAR_T=-0.35, BAR_B=3.75;
+function headD(){
+  const rU=(-NU-BT)/2, rL=(NL-BT)/2;
+  return [
+    `M${XP},${-BT}`,
+    `L${XN+rU},${-BT}`, `A${rU},${rU} 0 0 1 ${XN+rU},${NU}`,
+    `L${XP-CH},${NU}`, `L${XP},${YU}`,
+    `L${XH},${YU}`, `C${XH-1.5},${YU} ${XH-1.3},${BAR_T} ${XH-3.0},${BAR_T}`,
+    `L${XB},${BAR_T}`, `L${XB},${BAR_B}`, `L${XH-0.45},${BAR_B}`, `L${XH},${YL}`,
+    `L${XP},${YL}`, `L${XP-CH},${NL}`,
+    `L${XN+rL},${NL}`, `A${rL},${rL} 0 0 1 ${XN+rL},${BT}`,
+    `L${XN+rL},${-BT}`, `Z`].join(' ');
+}
+const HEAD_D=headD();
+const BLADE_D=`M${XN+0.5},${-BT} L-0.09,${-BT} Q0,${-BT} 0,${-BT+0.09} L0,${BT-0.09} Q0,${BT} -0.09,${BT} L${XN+0.5},${BT} Z`;
+$('headClipP').setAttribute('d',HEAD_D);
+
+function buildHead(parent,opt){
+  const g=el('g',{},parent);
+  // plate thickness (side face) seen slightly from above
+  el('path',{d:HEAD_D,transform:'translate(0.04 0.13)',fill:'#5b6571'},g);
+  el('path',{d:HEAD_D,fill:'url(#stV)'},g);
+  const c=el('g',{'clip-path':'url(#headClip)'},g);
+  el('rect',{x:XB,y:-5,width:-XB+1,height:10,fill:'url(#stH)'},c);
+  // brushed grain along the bar
+  for(let i=0;i<190;i++){
+    const y=-4.5+8.5*rnd(); const x0=-16+rnd()*16.5; const len=1.5+rnd()*9;
+    el('line',{x1:x0,y1:y,x2:x0-len,y2:y,stroke:rnd()<.55?'#ffffff':'#4d5867','stroke-width':.018+rnd()*.03,'stroke-opacity':.12+rnd()*.2},c);
+  }
+  for(let i=0;i<70;i++){
+    const y=BAR_T+(BAR_B-BAR_T)*rnd(); const x0=-10-rnd()*30; const len=3+rnd()*12;
+    el('line',{x1:x0,y1:y,x2:x0-len,y2:y,stroke:rnd()<.55?'#ffffff':'#4d5867','stroke-width':.02+rnd()*.03,'stroke-opacity':.1+rnd()*.16},c);
+  }
+  // chamfer facets along the outer edges (like the real head)
+  el('rect',{x:XB,y:YL-0.3,width:-XB+XP,height:0.3,fill:'#6f7a87',opacity:.28},c);
+  el('rect',{x:XB,y:YU,width:-XB+XP,height:0.22,fill:'#ffffff',opacity:.55},c);
+  // specular sweep
+  const sweep=el('rect',{x:-3,y:-5,width:6,height:10,fill:'url(#sweepG)',opacity:0,transform:'skewX(-20)'},c);
+  // 4.5-side dimmer (unused side)
+  const veil=el('rect',{x:-13,y:-4.7,width:13,height:4.7-0.05,fill:'#eaf0f6',opacity:0},c);
+  // engraving glow (4.0)
+  const glow=el('ellipse',{cx:-6.4,cy:2.2,rx:2.5,ry:1.5,fill:'url(#engGlow)',opacity:0},c);
+  // crisp edges
+  el('path',{d:HEAD_D,fill:'none',stroke:'#ffffff','stroke-opacity':.6,'stroke-width':.07},g);
+  el('path',{d:HEAD_D,fill:'none',stroke:'#3e4955','stroke-opacity':.55,'stroke-width':.035},g);
+  // laser engravings (Arial-like numerals)
+  const eng=(txt,x,y)=>{const e=el('g',{},g);
+    el('text',{x:x+.035,y:y+.05,'font-size':2.1,class:'eng','text-anchor':'middle',fill:'#ffffff','fill-opacity':.55,'text-rendering':'geometricPrecision'},e,txt);
+    el('text',{x,y,'font-size':2.1,class:'eng','text-anchor':'middle',fill:'#232a33','fill-opacity':.9,'text-rendering':'geometricPrecision'},e,txt);
+    return e;};
+  const e40=eng('4.0',-6.4,2.95);
+  const e45=eng('4.5',-6.4,-0.98);
+  const ring=el('rect',{x:-8.2,y:0.95,width:3.6,height:2.5,rx:.5,fill:'none',stroke:'#ff4f9d','stroke-width':.13,opacity:0},g);
+  // pink contact edge (outer edge of the 4.0 prong)
+  const edge=el('line',{x1:XP,y1:YL,x2:XH,y2:YL,stroke:'#ff4f9d','stroke-width':.2,'stroke-linecap':'round',opacity:0},g);
+  return {g,sweep,veil,glow,e40,e45,ring,edge};
+}
+function buildBlade(parent){
+  const g=el('g',{},parent);
+  el('path',{d:BLADE_D,transform:'translate(0.03 0.1)',fill:'#5b6571'},g);
+  el('path',{d:BLADE_D,fill:'url(#bladeV)'},g);
+  el('path',{d:BLADE_D,fill:'none',stroke:'#3e4955','stroke-opacity':.5,'stroke-width':.03},g);
+  el('line',{x1:XN+0.9,y1:-BT+0.06,x2:-0.1,y2:-BT+0.06,stroke:'#fff','stroke-width':.05,'stroke-opacity':.8},g);
+  return g;
+}
+// scene instrument (3 synced groups)
+const instG=$('instMain');
+const instFade=el('g',{mask:'url(#barFade)'},instG);
+const instIn=el('g',{filter:'url(#instSh)'},instFade);
+const bladeOutG=el('g',{'clip-path':'url(#bladeOutClip)'},instIn); buildBlade(bladeOutG);
+const bladeInG=el('g',{'clip-path':'url(#bladeInClip)',opacity:0},instIn); buildBlade(bladeInG);
+const HS=buildHead(instIn);
+// inset instrument
+const insetIn=el('g',{transform:'translate(520 782) scale(24)',filter:'url(#instShI)'},$('insetInst'));
+buildBlade(insetIn); const HI=buildHead(insetIn);
+set(HI.edge,{opacity:1}); set(HI.veil,{opacity:.28}); set(HI.e45,{opacity:.6});
+
+// ================= INSET ANNOTATIONS (card px)
+const IX=520, IY=782, IK=24, DX=704;
+const ia=$('insetAnn');
+const iCL=el('line',{x1:IX+6,y1:IY,x2:DX+16,y2:IY,stroke:'#2a69b0','stroke-width':2.2,'stroke-dasharray':'6 6'},ia);
+const iEU=el('line',{x1:IX+XP*IK+4,y1:IY+YU*IK,x2:DX+16,y2:IY+YU*IK,stroke:'#7d93b1','stroke-width':2,'stroke-dasharray':'6 6'},ia);
+const iEL=el('line',{x1:IX+XP*IK+4,y1:IY+YL*IK,x2:DX+16,y2:IY+YL*IK,stroke:'#2a69b0','stroke-width':2.2,'stroke-dasharray':'6 6'},ia);
+const iDU=el('g',{},ia);
+el('line',{x1:DX,y1:IY-4,x2:DX,y2:IY+YU*IK+14,stroke:'#7d93b1','stroke-width':3,'stroke-linecap':'round'},iDU);
+el('path',{d:`M${DX},${IY+YU*IK+1} l-8,15 l16,0z`,fill:'#7d93b1'},iDU);
+const iMid=el('circle',{cx:DX,cy:IY,r:5.5,fill:'#2a69b0',opacity:0},ia);
+const iDL=el('g',{},ia);
+el('line',{x1:DX,y1:IY+4,x2:DX,y2:IY+YL*IK-14,stroke:'#2a69b0','stroke-width':3.4,'stroke-linecap':'round'},iDL);
+el('path',{d:`M${DX},${IY+YL*IK-1} l-8,-15 l16,0z`,fill:'#2a69b0'},iDL);
+const iL45=el('text',{x:DX+24,y:IY+YU*IK/2+1,'font-size':36,'font-weight':800,fill:'#5b7395','dominant-baseline':'central'},ia,'4.5 mm');
+const iL40=el('g',{},ia);
+el('rect',{x:DX+18,y:IY+YL*IK/2-29,width:178,height:58,rx:29,fill:'#2a69b0'},iL40);
+el('text',{x:DX+107,y:IY+YL*IK/2+1,'font-size':36,'font-weight':800,fill:'#fff','text-anchor':'middle','dominant-baseline':'central'},iL40,'4.0 mm');
+const iTL=el('text',{x:IX+14,y:IY-14,'font-size':26,'font-weight':800,fill:'#24508f','letter-spacing':1.6},ia,'LÁMINA');
+const iTH=el('text',{x:IX+XP*IK,y:IY+YL*IK+38,'font-size':26,'font-weight':800,fill:'#c8296f','letter-spacing':1.6,'text-anchor':'end'},ia,'HOMBRO');
+
+// ================= WIDE-VIEW ANNOTATIONS
+const chipsG=$('chips'),pulG=$('pulses'),wcG=$('wContacts');
+const chipNodes=TEETH.map(()=>{
+  const g=el('g',{opacity:0},chipsG);
+  el('rect',{x:-64,y:-24,width:128,height:48,rx:24,fill:'#2a69b0'},g);
+  el('text',{x:0,y:1,'font-size':28,'font-weight':800,fill:'#fff','text-anchor':'middle','dominant-baseline':'central'},g,'4.0 mm');
+  const p=el('rect',{fill:'none',stroke:'#ff4f9d','stroke-width':3,rx:6,opacity:0},pulG);
+  const cg=el('g',{opacity:0},wcG);
+  const cl=el('line',{stroke:'#ff4f9d','stroke-width':4,'stroke-linecap':'round'},cg);
+  const cr=el('circle',{fill:'none',stroke:'#ff4f9d','stroke-width':2.5},cg);
+  const cd=el('circle',{r:5.5,fill:'#ff4f9d',stroke:'#fff','stroke-width':2},cg);
+  return {g,p,cg,cl,cr,cd};
+});
+
+// ================= CAMERA
+const CX=480, CY=480;
+const CAM_A0={s:37.5,x:-4.45,y:-1.72}, CAM_A1={s:38.6,x:-4.45,y:-1.78};
+const CAM_C0={s:50,x:-4.5,y:-5.0}, CAM_C1={s:51.2,x:-4.46,y:-4.98};
+const CAM_W={s:30,x:0,y:-5.0};
+let cam=CAM_A0;
+const W2S=(x,y)=>[CX+(x-cam.x)*cam.s, CY+(y-cam.y)*cam.s];
+const lerpCam=(a,b,k)=>({s:Math.exp(lerp(Math.log(a.s),Math.log(b.s),k)),x:lerp(a.x,b.x,k),y:lerp(a.y,b.y,k)});
+function line(id,x1,y1,x2,y2){set(typeof id==='string'?$(id):id,{x1,y1,x2,y2});}
+
+// ================= TIMELINE HELPERS
+// bracket heights
+function bracketY(i,t){
+  if(i===1) return lerp(YB0[1],SLOT,eio(seg(t,3.95,4.55)));
+  if(i===0) return lerp(YB0[0],SLOT,eio(seg(t,7.02,7.22)));
+  if(i===2) return lerp(YB0[2],SLOT,eio(seg(t,8.24,8.44)));
+  return lerp(YB0[3],SLOT,eio(seg(t,8.94,9.14)));
+}
+const CONTACT_W=[7.22,7.74,8.44,9.14];
+// instrument state in world coords
+function instState(t){
+  const S=TEETH.map(T=>T.seat);
+  if(t<2.7) return null;
+  if(t<6.45){
+    // set down beside the bracket (from the front), then slide the blade into the slot
+    const kin=eio(seg(t,3.2,3.9)), kout=ei(seg(t,5.95,6.4));
+    const lift=1-eio(seg(t,2.78,3.2));
+    return {x:S[1]-2.6*(1-kin)-3.4*kout, y:bracketY(1,t), lift, op:eo(seg(t,2.72,2.98))*(1-seg(t,6.1,6.4)), seated:1};
+  }
+  // wide: glide in lifted, then hop tooth to tooth
+  const legs=[ // [t0,t1,fromX,fromY,toIdx,downA,downB,upA,upB]
+    [6.45,6.98,S[0]-10,YB0[0],0],
+    [7.30,7.68,S[0],SLOT,1],
+    [7.82,8.20,S[1],SLOT,2],
+    [8.52,8.90,S[2],SLOT,3]];
+  let x=S[0]-10,y=YB0[0],lift=1;
+  for(let i=0;i<legs.length;i++){
+    const [a,b,fx,fy,to]=legs[i];
+    if(t>=a){
+      const k=eio(seg(t,i===0?a:a+0.06,b));
+      x=lerp(fx,S[to],k); y=lerp(fy,(to===1?SLOT:YB0[to]),k);
+      const up=(i===0)?1:seg(t,a,a+0.1);
+      const down=seg(t,b-0.08,b+0.04);
+      lift=Math.max(0,Math.min(up,1-down));
+      if(t>=b+0.04){ y=bracketY(to,t); lift=0; }
+    }
+  }
+  let op=eo(seg(t,6.45,6.65));
+  if(t>=9.22){
+    const k=eo(seg(t,9.25,9.6));
+    x=S[3]-1.4*k; y=SLOT-0.7*k; lift=seg(t,9.22,9.34); op*=1-seg(t,9.28,9.55);
+  }
+  return {x,y,lift,op,seated:0};
+}
+
+// ================= RENDER
+window.render=function(t){
+  // header + card
+  const hin=eo(seg(t,0,0.3));
+  $('hdr').style.opacity=hin.toFixed(3); $('hdr').style.transform=`translateY(${((1-hin)*16).toFixed(2)}px)`;
+  const cin=eo(seg(t,0.02,0.3));
+  $('card').style.opacity=cin.toFixed(3); $('card').style.transform=`translateY(${((1-cin)*28).toFixed(2)}px)`;
+
+  // camera
+  if(t<2.3) cam=lerpCam(CAM_A0,CAM_A1,seg(t,0,2.3));
+  else if(t<3.1) cam=lerpCam(CAM_A1,CAM_C0,eio(seg(t,2.3,3.1)));
+  else if(t<6.05) cam=lerpCam(CAM_C0,CAM_C1,seg(t,3.1,6.05));
+  else cam=lerpCam(CAM_C1,CAM_W,eio(seg(t,6.05,6.9)));
+  const WT=`translate(${f3(CX)},${f3(CY)}) scale(${f3(cam.s)}) translate(${f3(-cam.x)},${f3(-cam.y)})`;
+  ['worldA','worldB','worldG'].forEach(id=>$(id).setAttribute('transform',WT));
+
+  // brackets
+  const by=TEETH.map((T,i)=>bracketY(i,t));
+  brNodes.forEach((n,i)=>{ n.g.setAttribute('transform',`translate(${TEETH[i].x},${f3(by[i])})`); set(n.ins,{width:0}); set(n.insPad,{width:0}); set(n.insF,{width:0}); });
+  set($('bladeOutP'),{d:'M-90,-30 H40 V30 H-90Z'}); set($('bladeInR'),{x:100,y:100,width:1,height:1});
+
+  // instrument
+  const st=instState(t);
+  if(st && st.op>0.001){
+    const k=cam.s*(1+(t<6.45?0.05:0.035)*st.lift);
+    const [px,py]=W2S(st.x,st.y);
+    const tr=`translate(${f3(px)},${f3(py)}) scale(${f3(k)})`;
+    const wf=t>6.3?1:0;
+    instFade.setAttribute('transform',tr);
+    set($('barFadeG'),{x1:wf?-13.2:-80,x2:wf?-10.9:-79});
+    instG.setAttribute('opacity',f3(st.op));
+    bladeInG.setAttribute('opacity',0);
+    set($('instShF'),{dx:f3(0.12+0.3*st.lift),dy:f3(0.22+0.7*st.lift),stdDeviation:f3(0.18+0.42*st.lift),'flood-opacity':f3(0.34-0.08*st.lift)});
+    // blade lying in the slot of the bracket it is engaged with
+    if(st.lift<0.999){
+      TEETH.forEach((T,i)=>{
+        if(Math.abs(st.y-by[i])<0.15 && st.x>T.padL && st.x<=T.seat+0.01){
+          const n=brNodes[i];
+          // blade disappears into this bracket's slot: clip it out of the instrument, draw it inside the bracket
+          const x0=T.padL-st.x-0.01, x1=T.x+(T.hw+PAD)*T.sx-st.x+0.02, y0=by[i]-1.98-st.y, y1=by[i]+1.98-st.y;
+          set($('bladeOutP'),{d:`M-90,-30 H40 V30 H-90Z M${f3(x0)},${f3(y0)} H${f3(x1)} V${f3(y1)} H${f3(x0)}Z`});
+          set($('bladeInR'),{x:f3(x0),y:f3(y0),width:f3(x1-x0),height:f3(y1-y0)});
+          bladeInG.setAttribute('opacity',f3(st.lift));
+          [n.ins,n.insPad,n.insF].forEach(e=>e.setAttribute('opacity',f3(1-st.lift)));
+          const padW=Math.min(st.x,T.x-T.hw*T.sx)-T.padL;
+          set(n.insPad,{width:f3(Math.max(0,padW)/T.sx)});
+          const slotW=Math.max(0,st.x-(T.x-T.hw*T.sx));
+          set(n.ins,{width:f3(slotW/T.sx)}); set(n.insF,{width:f3(slotW/T.sx)});
+        }
+      });
+    }
+  } else { instG.setAttribute('opacity',0); }
+
+  // instrument details: sweep, 4.5 dimmer, 4.0 glow
+  {
+    const ks=seg(t,3.0,4.0);
+    set(HS.sweep,{x:f3(lerp(-14,1,eio(ks))-3),opacity:(ks>0&&ks<1)?1:0});
+    const dimK=eo(seg(t,3.95,4.4));
+    HS.veil.setAttribute('opacity',f3(0.32*dimK));
+    HS.e45.setAttribute('opacity',f3(1-0.5*dimK));
+    // pink on the 4.0 engraving + 4.0 prong edge at the moment of contact (close-up) and at each wide contact
+    let g=seg(t,4.5,4.62)*(1-0.35*seg(t,4.9,5.3));
+    let ed=seg(t,4.5,4.6);
+    if(t>=6.45){ g=0; ed=0;
+      CONTACT_W.forEach(c=>{ const p=seg(t,c-0.04,c+0.06)*(1-seg(t,c+0.18,c+0.36)); g=Math.max(g,p*0.85); ed=Math.max(ed,p); }); }
+    HS.glow.setAttribute('opacity',f3(g)); HS.ring.setAttribute('opacity',f3(g));
+    HS.edge.setAttribute('opacity',f3(ed));
+  }
+
+  // neighbour veil (lighter)
+  {
+    const [wx,wy]=W2S(TEETH[FOCUS].x,-5.0);
+    const rx=4.45*1.1*cam.s/0.64, ry=8.6*cam.s/0.64;
+    $('wmg').setAttribute('gradientTransform',`translate(${f3(wx)},${f3(wy)}) scale(${f3(rx)},${f3(ry)})`);
+    $('wash').setAttribute('opacity',f3(0.46*eo(seg(t,0.1,0.6))*(1-eio(seg(t,6.05,6.7)))));
+  }
+
+  // inset (beat 1): DE LA LÁMINA AL HOMBRO = ALTURA
+  {
+    const pin=eo(seg(t,0.36,0.8)), pout=seg(t,2.2,2.5);
+    $('inset').setAttribute('opacity',f3(pin*(1-pout)));
+    $('inset').setAttribute('transform',`translate(0 ${f3((1-pin)*22+eio(pout)*14)})`);
+    const a1=eo(seg(t,0.75,1.05)), a2=eo(seg(t,0.95,1.3)), a3=eo(seg(t,1.2,1.55));
+    iCL.setAttribute('opacity',f3(a1)); iTL.setAttribute('opacity',f3(a1)); iMid.setAttribute('opacity',f3(a2));
+    iEU.setAttribute('opacity',f3(a2)); iEL.setAttribute('opacity',f3(a2));
+    iDU.setAttribute('opacity',f3(a2)); iDL.setAttribute('opacity',f3(a2));
+    iL45.setAttribute('opacity',f3(a3)); iL40.setAttribute('opacity',f3(a3));
+    iL40.setAttribute('transform',`translate(${f3((1-a3)*-10)} 0)`);
+    iTH.setAttribute('opacity',f3(a3));
+  }
+
+  // view label
+  {
+    const wide=t>=6.5;
+    $('viewLblT').textContent= wide?'VISTA LABIAL · SECTOR ANTERIOR':'VISTA LABIAL · INCISIVO CENTRAL';
+    const o= wide? eo(seg(t,6.9,7.3)) : eo(seg(t,0.35,0.7))*(1-seg(t,2.2,2.45));
+    $('viewLbl').setAttribute('opacity',f3(o));
+    const w=$('viewLblT').getComputedTextLength();
+    $('viewLblR').setAttribute('width',f3(w+48));
+  }
+
+  // tooth long axis
+  {
+    const ax=W2S(TEETH[FOCUS].x,0)[0];
+    const [,yTop]=W2S(0,-11.75), [,yBot]=W2S(0,1.1);
+    const k=eio(seg(t,4.75,5.2));
+    const yk=lerp(yBot,yTop,k);
+    line('axL',ax,yBot,ax,yk);
+    const [,yM]=W2S(0,-10.4);
+    line('axL2',ax,yM,ax,Math.min(yM,yk));
+    $('axL2').setAttribute('opacity',yk<yM?1:0);
+    const [,py]=W2S(0,-12.25);
+    const tw=$('axT').getComputedTextLength();
+    set($('axPR'),{x:f3(ax-tw/2-22),y:f3(py-23),width:f3(tw+44)});
+    set($('axT'),{x:f3(ax),y:f3(py+1)});
+    $('axP').setAttribute('opacity',f3(eo(seg(t,5.0,5.3))));
+    const axo=f3(seg(t,4.75,4.85)*(1-seg(t,5.95,6.25))); $('axis').setAttribute('opacity',axo); $('axisCrown').setAttribute('opacity',axo);
+  }
+
+  // slot highlight while the blade enters
+  {
+    const T=TEETH[FOCUS];
+    const [sx,sy]=W2S(T.x,by[1]);
+    const bw=(2*T.hw+0.1)*cam.s, sh=0.56*cam.s;
+    set($('slotHiR'),{x:f3(sx-bw/2-8),y:f3(sy-sh/2-7),width:f3(bw+16),height:f3(sh+14)});
+    set($('slotHiG'),{x:f3(sx-bw/2-70),y:f3(sy-64),width:f3(bw+140),height:128});
+    $('slotHi').setAttribute('opacity',f3(seg(t,3.45,3.65)*(1-seg(t,4.0,4.35))));
+  }
+
+  // contact (close-up): outer edge of the 4.0 prong flush with the incisal edge
+  {
+    const T=TEETH[FOCUS];
+    const [cx_,cy_]=W2S(T.prong,0);
+    const [lx0]=W2S(T.prong-2.6,0), [lx1]=W2S(T.prong+1.5,0);
+    const k=seg(t,4.52,5.25);
+    line('ctLine',lx0,cy_,lx1,cy_);
+    set($('ctRing'),{cx:f3(cx_),cy:f3(cy_),r:f3(12+38*eo(k)),opacity:f3(1-k)});
+    set($('ctGlow'),{cx:f3(cx_),cy:f3(cy_),rx:f3(4.2*cam.s),ry:f3(0.9*cam.s)});
+    set($('ctDot'),{cx:f3(cx_),cy:f3(cy_)});
+    $('contact').setAttribute('opacity',f3(seg(t,4.5,4.62)*(1-seg(t,5.95,6.25))));
+  }
+
+  // dimension: incisal edge -> slot centre (4.0 mm), parallel to the long axis
+  {
+    const T=TEETH[FOCUS];
+    const dxw=T.x+T.hw+PAD+1.15;
+    const [px,y0]=W2S(dxw,0), [,y1]=W2S(dxw,SLOT);
+    const [e1x]=W2S(T.x+0.6,0), [e2x]=W2S(T.x+T.hw+PAD+0.1,0);
+    const ke=eo(seg(t,4.85,5.2));
+    line('ext1',e1x,y0,lerp(e1x,px+18,ke),y0);
+    line('ext2',e2x,y1,lerp(e2x,px+18,ke),y1);
+    const kd=eio(seg(t,5.05,5.5));
+    line('dline',px,y0-6,px,lerp(y0-6,y1+6,kd));
+    $('dline').setAttribute('opacity',kd>0?1:0);
+    const kt=seg(t,5.05,5.15), kt2=seg(t,5.45,5.55);
+    line('tick1',px-13,y0,px+13,y0); $('tick1').setAttribute('opacity',f3(kt));
+    line('tick2',px-13,y1,px+13,y1); $('tick2').setAttribute('opacity',f3(kt2));
+    $('arr1').setAttribute('d',`M${f3(px)},${f3(y0-1.5)} l-8.5,-16 l17,0z`); $('arr1').setAttribute('opacity',f3(kt));
+    $('arr2').setAttribute('d',`M${f3(px)},${f3(y1+1.5)} l-8.5,16 l17,0z`); $('arr2').setAttribute('opacity',f3(kt2));
+    const kl=eo(seg(t,5.35,5.75));
+    $('dlab').setAttribute('transform',`translate(${f3(px+26-(1-kl)*14)},${f3(y1+22)})`);
+    $('dlab').setAttribute('opacity',f3(kl));
+    const kp=eo(seg(t,5.5,5.8));
+    set($('dp1'),{x:f3(px+34),y:f3(y1+22+76+38)}); set($('dp2'),{x:f3(px+34),y:f3(y1+22+76+70)});
+    $('dpar').setAttribute('opacity',f3(kp));
+    $('dim').setAttribute('opacity',f3(seg(t,4.85,4.9)*(1-seg(t,5.98,6.3))));
+  }
+
+  // wide view: one level line through the slots, 4.0 mm chips, legend
+  {
+    $('align').setAttribute('opacity',f3(seg(t,6.75,6.95))); $('alignU').setAttribute('opacity',f3(seg(t,6.75,6.95)));
+    const [lx0,ys]=W2S(-15.8,SLOT), [lx1]=W2S(15.8,SLOT), [,yi]=W2S(0,0);
+    const ki=eio(seg(t,6.8,7.5));
+    line('incLine',lx0,yi,lerp(lx0,lx1,ki),yi);
+    // slot line grows bracket by bracket
+    let xr=-15.8;
+    const ends=TEETH.map(T=>T.x+(T.hw+PAD)*T.sx+0.4);
+    CONTACT_W.forEach((c,i)=>{ const k=eo(seg(t,c,c+0.32)); if(k>0) xr=lerp(i===0?-15.8:ends[i-1],ends[i],k); });
+    xr=lerp(xr,15.8,eo(seg(t,9.2,9.55)));
+    const [sxr]=W2S(xr,SLOT);
+    line('slotLine',lx0,ys,sxr,ys);
+    $('slotLine').setAttribute('opacity',t>=CONTACT_W[0]?1:0);
+    TEETH.forEach((T,i)=>{
+      const c=CONTACT_W[i];
+      const n=chipNodes[i];
+      const [tx,ty]=W2S(T.x,1.95);
+      const kc=eo(seg(t,c,c+0.32));
+      n.g.setAttribute('transform',`translate(${f3(tx)},${f3(ty+(1-kc)*10)})`);
+      n.g.setAttribute('opacity',f3(kc));
+      const [bx,byy]=W2S(T.x,by[i]);
+      const bw=(2*T.hw+0.1)*T.sx*cam.s, sh=0.56*cam.s;
+      const kp=seg(t,c-0.02,c+0.6);
+      set(n.p,{x:f3(bx-bw/2-6-kp*7),y:f3(byy-sh/2-5-kp*7),width:f3(bw+12+kp*14),height:f3(sh+10+kp*14),opacity:f3(kp>0?(1-kp)*0.95:0)});
+      // contact flash at the incisal edge
+      const [cx_,cy_]=W2S(T.prong,0), [l0]=W2S(T.prong-1.6,0), [l1]=W2S(T.prong+1.0,0);
+      const kk=seg(t,c-0.02,c+0.5);
+      line(n.cl,l0,cy_,l1,cy_);
+      set(n.cr,{cx:f3(cx_),cy:f3(cy_),r:f3(8+24*eo(kk)),opacity:f3(1-kk)});
+      set(n.cd,{cx:f3(cx_),cy:f3(cy_)});
+      n.cg.setAttribute('opacity',f3(kk>0&&kk<1? Math.min(1,kk*8)*(1-seg(t,c+0.25,c+0.5)) : 0));
+    });
+    $('legend').setAttribute('opacity',f3(eo(seg(t,9.3,9.65))));
+    $('legend').setAttribute('transform',`translate(0 ${f3((1-eo(seg(t,9.3,9.65)))*10)})`);
+  }
+
+  // captions (sequential, no overlap)
+  const caps=[['c1',0.12,2.62],['c2',2.72,3.88],['c3',3.92,4.78],['c4',4.82,6.22],['c5',6.36,99]];
+  caps.forEach(([id,a,b])=>{
+    const kin=eo(seg(t,a,a+0.32)), kout=seg(t,b-0.16,b);
+    const e=$(id); e.style.opacity=(kin*(1-kout)).toFixed(3);
+    e.style.transform=`translateY(${((1-kin)*16-kout*10).toFixed(2)}px)`;
+  });
+};
+render(0);
+document.fonts.ready.then(()=>{window.__ready=true;render(window.__t||0);});
+})();
+</script>
+</body></html>

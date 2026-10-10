@@ -1,0 +1,194 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face{font-family:M;font-weight:300;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-300-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:800;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:900;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2)}
+:root{--bg:#2f5ea3;--blue:#cfe6ff;--blue2:#1d4f9a;--pink:#ff9cc8;--w:#ffffff;--mut:#d3e2f5}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:linear-gradient(170deg,#6a9ad6 0%,#3a6db3 50%,#24508f 100%);font-family:M,sans-serif;color:var(--w)}
+.a{position:absolute}
+.scene{position:absolute;inset:0;opacity:0}
+.k{position:absolute;font-weight:900;text-transform:uppercase;letter-spacing:-.02em;line-height:.95;white-space:nowrap}
+.out{color:transparent;-webkit-text-stroke:3px var(--w)}
+.eb{position:absolute;font-weight:800;font-size:34px;letter-spacing:.32em;color:var(--pink)}
+.prod{position:absolute;transform-origin:center center}
+.prod img{display:block;width:100%;height:100%;filter:drop-shadow(0 30px 40px rgba(8,24,60,.55))}
+.sweep{position:absolute;inset:0;mix-blend-mode:screen;-webkit-mask-size:100% 100%;-webkit-mask-repeat:no-repeat;
+  background:linear-gradient(100deg,transparent 0%,transparent 42%,rgba(255,255,255,.85) 50%,transparent 58%,transparent 100%);background-size:300% 100%;background-repeat:no-repeat}
+.pill{position:absolute;border:3px solid rgba(255,255,255,.85);border-radius:999px;padding:22px 0;width:440px;text-align:center;font-weight:800;font-size:44px;letter-spacing:.06em}
+.chip{position:absolute;width:170px;height:170px;border-radius:50%;border:3px solid var(--blue);display:flex;flex-direction:column;align-items:center;justify-content:center;font-weight:800;font-size:54px;background:rgba(255,255,255,.12)}
+.chip small{font-size:22px;font-weight:500;color:var(--mut);letter-spacing:.2em}
+.chk{display:inline-block;width:76px;height:76px;border-radius:50%;background:#fff;margin-right:30px;vertical-align:middle;position:relative;top:-8px}
+.chk.pk:after{border-color:#fff}
+.chk:after{content:"";position:absolute;left:24px;top:14px;width:20px;height:38px;border:solid #2f5ea3;border-width:0 9px 9px 0;transform:rotate(45deg)}
+#glow{position:absolute;width:1600px;height:1600px;border-radius:50%;background:radial-gradient(circle,rgba(255,255,255,.28),rgba(255,255,255,0) 62%)}
+#vig{position:absolute;inset:0;background:radial-gradient(ellipse at 50% 45%,transparent 45%,rgba(10,30,70,.35) 100%);pointer-events:none}
+#grain{position:absolute;left:-200px;top:-200px;width:1480px;height:2320px;background:url(grain.png);background-size:540px 960px;opacity:.07;mix-blend-mode:overlay}
+.ring{position:absolute;left:540px;top:1240px;width:400px;height:400px;margin:-200px 0 0 -200px;border-radius:50%;border:6px solid rgba(150,210,255,.9);opacity:0}
+#bburst{position:absolute;left:540px;top:1240px;width:1300px;height:1300px;margin:-650px 0 0 -650px;border-radius:50%;background:radial-gradient(circle,rgba(120,195,255,.95) 0%,rgba(60,150,255,.55) 22%,rgba(40,110,230,.18) 45%,rgba(40,110,230,0) 66%);opacity:0;mix-blend-mode:screen}
+#rays{position:absolute;left:540px;top:1240px;width:1800px;height:1800px;margin:-900px 0 0 -900px;opacity:0;mix-blend-mode:screen;background:repeating-conic-gradient(from 0deg,rgba(160,215,255,.22) 0deg 4deg,rgba(160,215,255,0) 4deg 18deg);-webkit-mask-image:radial-gradient(circle,#000 0%,rgba(0,0,0,.6) 30%,transparent 62%)}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+</style></head><body>
+<div id="glow"></div>
+
+<!-- S0 hook -->
+<div class="scene" id="s0">
+  <div class="prod" id="p0" style="left:185px;top:584px;width:2226px;height:507px"><img src="user_detail.png"><div class="sweep" style="-webkit-mask-image:url(user_detail.png)"></div></div>
+  <div class="k" id="h1" style="left:80px;top:300px;font-size:150px">¿Frágil?</div>
+  <div class="k" id="h2" style="left:80px;top:460px;font-size:150px">¿Se dobla?</div>
+  <div class="k out" id="h3" style="left:80px;top:620px;font-size:92px">¿Se descalibra?</div>
+</div>
+
+<!-- S1 reveal -->
+<div class="scene" id="s1">
+  <div class="k" id="r1" style="left:0;width:1080px;text-align:center;top:640px;font-size:280px">Recto</div>
+  <div class="prod" id="p1" style="left:439px;top:300px;width:202px;height:1700px"><img src="user_inst0_v.png"><div class="sweep" style="-webkit-mask-image:url(user_inst0_v.png)"></div></div>
+  <div class="k out" id="r2" style="left:0;width:1080px;text-align:center;top:940px;font-size:150px">Cabeza fija</div>
+  <div class="eb" id="r3" style="left:0;width:1080px;text-align:center;top:1790px;font-size:26px">POSICIONADOR DE BRACKETS</div>
+</div>
+
+<!-- S2 tips -->
+<div class="scene" id="s2">
+  <div class="eb" id="t0" style="left:80px;top:300px">PUNTAS FIJAS</div>
+  <div class="prod" id="p2" style="left:150px;top:460px;width:2226px;height:507px"><img src="user_detail.png"><div class="sweep" style="-webkit-mask-image:url(user_detail.png)"></div></div>
+  <div class="k" id="t1" style="left:80px;top:1120px;font-size:96px"><span class="chk"></span>No se mueve.</div>
+  <div class="k" id="t2" style="left:80px;top:1270px;font-size:96px"><span class="chk"></span>No se dobla.</div>
+  <div class="k" id="t3" style="left:80px;top:1420px;font-size:96px;color:var(--blue)"><span class="chk pk" style="background:var(--pink)"></span>Altura exacta.</div>
+</div>
+
+<!-- S3 dos versiones -->
+<div class="scene" id="s3">
+  <div class="k" id="m1" style="left:0;width:1080px;text-align:center;top:270px;font-size:112px">2 versiones</div>
+  <div class="k out" id="m2" style="left:0;width:1080px;text-align:center;top:400px;font-size:64px">4 alturas cada una</div>
+  <div class="eb" id="v1t" style="left:0;width:540px;text-align:center;top:540px;font-size:30px">VERSIÓN 1</div>
+  <div class="k" id="v1n" style="left:0;width:540px;text-align:center;top:595px;font-size:66px;line-height:1.12">3.5 · 4.0<br>4.5 · 5.0</div>
+  <div class="eb" id="v1m" style="left:0;width:540px;text-align:center;top:752px;font-size:24px;color:var(--blue)">MILÍMETROS</div>
+  <div class="eb" id="v2t" style="left:540px;width:540px;text-align:center;top:540px;font-size:30px">VERSIÓN 2</div>
+  <div class="k" id="v2n" style="left:540px;width:540px;text-align:center;top:595px;font-size:66px;line-height:1.12">5.0 · 5.5<br>6.0 · 6.5</div>
+  <div class="eb" id="v2m" style="left:540px;width:540px;text-align:center;top:752px;font-size:24px;color:var(--blue)">MILÍMETROS</div>
+  <div class="prod" id="p3a" style="left:169px;top:850px;width:202px;height:1700px"><img src="user_inst0_v.png"><div class="sweep" style="-webkit-mask-image:url(user_inst0_v.png)"></div></div>
+  <div class="prod" id="p3b" style="left:695px;top:850px;width:231px;height:1700px"><img src="user_inst1_v.png"><div class="sweep" style="-webkit-mask-image:url(user_inst1_v.png)"></div></div>
+  <div class="eb" id="v3s" style="left:0;width:1080px;text-align:center;top:1480px;font-size:30px;color:var(--w)">SLOT .022"</div>
+</div>
+
+<!-- S4 mango -->
+<div class="scene" id="s4">
+  <div class="k" id="g1" style="left:80px;top:280px;font-size:150px">Mango</div>
+  <div class="k out" id="g2" style="left:80px;top:430px;font-size:112px">ergonómico</div>
+  <div class="prod" id="p4" style="left:0;top:690px;width:2226px;height:507px"><img src="user_detail.png"><div class="sweep" style="-webkit-mask-image:url(user_detail.png)"></div></div>
+  <div class="k" id="g3" style="left:80px;top:1240px;font-size:66px;font-weight:800">Agarre firme</div>
+  <div class="k" id="g4" style="left:80px;top:1320px;font-size:66px;font-weight:800;color:var(--blue)">Medida precisa</div>
+</div>
+
+<!-- S5 calidad + precio -->
+<div class="scene" id="s5">
+  <div class="prod" id="p5" style="left:-5px;top:230px;width:1091px;height:487px"><img src="user_hero.png"><div class="sweep" style="-webkit-mask-image:url(user_hero.png)"></div></div>
+  <div class="pill" id="b1" style="left:80px;top:820px">ISO 9001</div>
+  <div class="pill" id="b2" style="left:560px;top:820px">ISO 13485</div>
+  <div class="pill" id="b3" style="left:80px;top:950px">CE</div>
+  <div class="pill" id="b4" style="left:560px;top:950px">FDA</div>
+  <div class="k" id="w1" style="left:0;width:1080px;text-align:center;top:1150px;font-size:230px">1 año</div>
+  <div class="eb" id="w2" style="left:0;width:1080px;text-align:center;top:1390px;font-size:40px;color:var(--w)">DE GARANTÍA</div>
+  <div id="rays"></div><div id="bburst"></div><div class="ring" id="rg1"></div><div class="ring" id="rg2"></div>
+  <div class="eb" id="pr0" style="left:0;width:1080px;text-align:center;top:1000px;font-size:36px">HECHO PARA DURAR</div>
+  <div class="k" id="pr1" style="left:0;width:1080px;text-align:center;top:1090px;font-size:300px"><span style="font-size:.45em;vertical-align:.75em;margin-right:.08em;font-weight:700">S/</span><span id="num">105</span></div>
+  <div class="a" id="pr2" style="left:440px;top:1410px;width:200px;height:8px;background:var(--pink);border-radius:4px;transform-origin:center"></div>
+</div>
+
+<!-- S6 end -->
+<div class="scene" id="s6">
+  <div class="a" id="e1" style="left:200px;top:440px;width:680px;height:600px;background:#fff;border-radius:56px;box-shadow:0 30px 70px rgba(8,24,60,.35);display:flex;align-items:center;justify-content:center"><img src="logo_full.png" style="width:520px"></div>
+  <div class="a" id="e2" style="left:0;top:1140px;width:1080px;text-align:center">
+    <div style="font-weight:700;font-size:28px;letter-spacing:.35em;color:var(--pink)">DISTRIBUIDO EN EL PERÚ POR</div>
+    <div style="font-weight:800;font-size:76px;margin-top:26px">Orthoplace S.A.C.</div>
+    <div style="font-weight:500;font-size:40px;color:var(--mut);margin-top:16px">orthoplaceonline.com</div>
+  </div>
+</div>
+
+<div class="a" id="mark" style="left:70px;top:100px;width:96px;height:96px;background:#fff;border-radius:26px;display:flex;align-items:center;justify-content:center;opacity:0;box-shadow:0 10px 30px rgba(8,24,60,.25)"><img src="logo_mark.png" style="width:56px"></div>
+<div id="vig"></div><div id="grain"></div><div id="flash"></div>
+
+<script>
+const TM = window.TIMING;
+const L = TM.lines, TOTAL = TM.total;
+const SS = L.map((l,i)=> i==0 ? 0 : l.start-0.3); SS.push(TOTAL);
+const cue=(k,f)=>L[k].start+f*L[k].dur;
+const C=(x,a=0,b=1)=>Math.max(a,Math.min(b,x));
+const eo=x=>1-Math.pow(1-x,3), eb=x=>{const c1=1.70158,c3=c1+1;return 1+c3*Math.pow(x-1,3)+c1*Math.pow(x-1,2)};
+const $=id=>document.getElementById(id);
+function pop(el,t0,t,{dx=0,dy=60,dur=.45,blur=10,back=false,sc=1}={}){
+  const p=C((t-t0)/dur), e=back?eb(p):eo(p);
+  el.style.opacity=C((t-t0)/(dur*.6));
+  el.style.transform=`translate(${(1-e)*dx}px,${(1-e)*dy}px) scale(${sc+(1-sc)*e})`;
+  el.style.filter=blur?`blur(${(1-C(p*1.4))*blur}px)`:'';
+}
+function sweep(prod,t0,t,dur=1.3){const s=prod.querySelector('.sweep');const p=C((t-t0)/dur);s.style.backgroundPosition=`${110-p*120}% 0`;s.style.opacity=(p>0&&p<1)?1:0;}
+window.render=function(t){
+  // scenes visibility
+  for(let k=0;k<7;k++){const sc=$('s'+k),a=SS[k],b=SS[k+1];
+    const vin=k==0?1:C((t-a)/.22), vout=k==6?1:1-C((t-b)/.22);
+    const v=t<a||t>b+.22?0:vin*vout; sc.style.opacity=v;
+    sc.style.transform=`scale(${1+0.04*(1-vin)})`; sc.style.display=v>0?'block':'none';}
+  // glow drift
+  $('glow').style.transform=`translate(${-260+Math.sin(t*.35)*160}px,${160+Math.cos(t*.27)*240}px)`;
+  $('grain').style.transform=`translate(${(Math.floor(t*24)*37)%200}px,${(Math.floor(t*24)*53)%200}px)`;
+  $('mark').style.opacity=C((t-SS[1])/.4)*(1-C((t-SS[6])/.3));
+  // flash on reveal
+  $('flash').style.opacity=Math.max(0,.35-Math.abs(t-SS[1])*1.6);
+  let u;
+  // S0 hook
+  u=t-SS[0];
+  $('p0').style.transform=`rotate(-28deg) scale(${1.05+0.10*C(u/4)})`; $('p0').style.opacity=C(u/.8)*.95;
+  sweep($('p0'),.6,t,1.6);
+  pop($('h1'),cue(0,.45),t,{dx:-80,dy:0}); pop($('h2'),cue(0,.66),t,{dx:-80,dy:0}); pop($('h3'),cue(0,.8),t,{dx:-80,dy:0});
+  // S1 reveal
+  u=t-SS[1];
+  {const p=eo(C(u/.9)); $('p1').style.transform=`translateY(${(1-p)*380}px) rotate(${-4+4*p}deg)`; $('p1').style.filter=`blur(${(1-p)*12}px)`; $('p1').style.opacity=C(u/.4);}
+  sweep($('p1'),SS[1]+.9,t,1.4);
+  pop($('r1'),cue(1,.45),t,{dy:0,sc:1.25,blur:16}); pop($('r2'),cue(1,.62),t,{dy:50}); pop($('r3'),cue(1,.85),t,{dy:20,blur:0});
+  // S2 tips: macro on head, slow pan
+  u=t-SS[2];
+  $('p2').style.transform=`translateX(${40-u*14}px) rotate(-14deg) scale(${1.0+u*.012})`;
+  sweep($('p2'),SS[2]+.3,t,1.6);
+  pop($('t0'),SS[2]+.15,t,{dy:20,blur:0}); pop($('t1'),cue(2,.24),t,{dx:-70,dy:0,back:true}); pop($('t2'),cue(2,.42),t,{dx:-70,dy:0,back:true}); pop($('t3'),cue(2,.85),t,{dx:-70,dy:0,back:true});
+  // S3 dos versiones
+  u=t-SS[3];
+  pop($('m1'),SS[3]+.1,t,{dy:0,sc:1.2,blur:14}); pop($('m2'),SS[3]+.5,t,{dy:30});
+  [['a',.9],['b',2.4]].forEach(([k,d])=>{const p=$('p3'+k); const q=eo(C((u-d)/.9));
+    p.style.transform=`translateY(${(1-q)*320}px)`; p.style.opacity=C((u-d)/.35); p.style.filter=`blur(${(1-q)*10}px)`; sweep(p,SS[3]+d+.7,t,1.4);});
+  pop($('v1t'),SS[3]+.9,t,{dy:20,blur:0}); pop($('v1n'),SS[3]+1.1,t,{dy:0,sc:.8,blur:10}); pop($('v1m'),SS[3]+1.4,t,{dy:12,blur:0});
+  pop($('v2t'),SS[3]+2.4,t,{dy:20,blur:0}); pop($('v2n'),SS[3]+2.6,t,{dy:0,sc:.8,blur:10}); pop($('v2m'),SS[3]+2.9,t,{dy:12,blur:0});
+  pop($('v3s'),SS[3]+3.5,t,{dy:16,blur:0});
+  // S4 mango: pan across the instrument
+  u=t-SS[4];
+  {const d=SS[5]-SS[4]; const p=C(u/d); $('p4').style.transform=`translateX(${-80-900*eio(p)}px) rotate(-12deg)`;}
+  sweep($('p4'),SS[4]+1.4,t,1.6);
+  pop($('g1'),SS[4]+.1,t,{dx:-60,dy:0}); pop($('g2'),cue(4,.2),t,{dx:-60,dy:0});
+  pop($('g3'),cue(4,.4),t,{dy:30}); pop($('g4'),cue(4,.7),t,{dy:30});
+  // S5 calidad + precio
+  u=t-SS[5];
+  $('p5').style.transform=`translateY(${Math.sin(u*1.1)*10}px) scale(${.96+.04*eo(C(u/.8))})`; $('p5').style.opacity=C(u/.5);
+  sweep($('p5'),SS[5]+.4,t,1.6);
+  const tP=cue(5,.55); const hideA=C((t-tP)/.3);
+  ['b1','b2','b3','b4'].forEach((b,i)=>{pop($(b),cue(5,.04)+i*.12,t,{dy:0,sc:.6,back:true,blur:0}); $(b).style.opacity*=1-hideA;});
+  pop($('w1'),cue(5,.29),t,{dy:0,sc:1.3,blur:12}); $('w1').style.opacity*=1-hideA;
+  pop($('w2'),cue(5,.33),t,{dy:20,blur:0}); $('w2').style.opacity*=1-hideA;
+  pop($('pr0'),tP+.15,t,{dy:20,blur:0});
+  const tN=cue(5,.60); pop($('pr1'),tN-.2,t,{dy:0,sc:.7,back:true,blur:8});
+  $('num').textContent=Math.round(105*eo(C((t-tN+.2)/.7)));
+  $('pr2').style.transform=`scaleX(${eo(C((t-tN-.4)/.5))})`;
+  {const uu=t-tN; const b=$('bburst'); b.style.opacity=uu<0?0:Math.min(1,uu/.15)*Math.max(.35,1-uu/1.4); b.style.transform=`scale(${.3+.7*eo(C(uu/.6))})`;
+   const r=$('rays'); r.style.opacity=uu<0?0:Math.min(.9,uu/.2)*Math.max(.25,1-uu/1.8); r.style.transform=`rotate(${uu*14}deg) scale(${.6+.4*eo(C(uu/.8))})`;
+   [['rg1',0],['rg2',.22]].forEach(([id,d])=>{const v=uu-d; const el=$(id); el.style.opacity=v<0?0:(1-C(v/1.1))*.95; el.style.transform=`scale(${.4+3.2*eo(C(v/1.1))})`;});
+   $('pr1').style.textShadow=`0 0 ${60*C(uu/.3)}px rgba(90,170,255,.9)`;}
+  // S6 end
+  u=t-SS[6];
+  pop($('e1'),SS[6]+.1,t,{dy:0,sc:.85,blur:14,dur:.7}); pop($('e2'),cue(6,.3),t,{dy:40});
+};
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+window.render(0);
+</script>
+</body></html>

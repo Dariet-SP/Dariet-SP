@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8">
+<title>Cómo se usa</title>
+<style>
+@font-face{font-family:M;font-weight:300;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-300-normal.woff2)}
+@font-face{font-family:M;font-weight:500;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-500-normal.woff2)}
+@font-face{font-family:M;font-weight:700;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-700-normal.woff2)}
+@font-face{font-family:M;font-weight:800;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-800-normal.woff2)}
+@font-face{font-family:M;font-weight:900;src:url(../build/node_modules/@fontsource/montserrat/files/montserrat-latin-900-normal.woff2)}
+:root{--pink:#ff9cc8;--lb:#cfe6ff;--brand:#2a69b0}
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;background:#3a6db3}
+body{position:relative;font-family:M,sans-serif;color:#fff;
+  background:linear-gradient(170deg,#6a9ad6 0%,#3a6db3 50%,#24508f 100%)}
+.a{position:absolute}
+#glow{left:-260px;top:120px;width:1600px;height:1600px;border-radius:50%;
+  background:radial-gradient(circle,rgba(255,255,255,.26),rgba(255,255,255,0) 62%)}
+#vig{inset:0;background:radial-gradient(ellipse at 50% 45%,transparent 48%,rgba(10,30,70,.34) 100%)}
+#hdr{left:0;top:214px;width:1080px;text-align:center}
+#eb{font-weight:800;font-size:26px;letter-spacing:.34em;color:var(--pink);padding-left:.34em}
+#ttl{font-weight:900;font-size:88px;letter-spacing:-.01em;line-height:1;margin-top:14px;text-transform:uppercase}
+#card{left:60px;top:404px;width:960px;height:990px;border-radius:48px;overflow:hidden;background:#fff;
+  box-shadow:0 40px 80px rgba(8,26,64,.38),0 8px 22px rgba(8,26,64,.18)}
+#card svg{position:absolute;left:0;top:0}
+#caps{left:60px;top:1420px;width:960px;height:180px}
+.cap{position:absolute;left:0;top:0;width:960px;text-align:center;opacity:0}
+.cap .k{display:inline-block;font-weight:800;font-size:24px;letter-spacing:.3em;color:var(--pink);padding-left:.3em}
+.cap .m{font-weight:800;font-size:48px;line-height:1.1;letter-spacing:-.005em;margin-top:10px}
+.cap .s{font-weight:500;font-size:28px;color:var(--lb);margin-top:12px;letter-spacing:.01em}
+.cap .m b{color:var(--pink);font-weight:900}
+svg text{font-family:M,sans-serif}
+</style></head>
+<body>
+<div class="a" id="glow"></div>
+<div class="a" id="vig"></div>
+
+<div class="a" id="hdr"><div id="eb">POSICIONADOR RECTO PROMED</div><div id="ttl">Cómo se usa</div></div>
+
+<div class="a" id="card">
+<svg id="sv" width="960" height="990" viewBox="0 0 960 990" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <!-- panel -->
+  <linearGradient id="panelG" x1="0" y1="0" x2="0" y2="990" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#f4f7fb"/><stop offset=".6" stop-color="#eaf0f7"/><stop offset="1" stop-color="#dde6f1"/>
+  </linearGradient>
+  <radialGradient id="panelHi" cx="480" cy="380" r="640" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".9"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+  </radialGradient>
+
+  <!-- enamel -->
+  <linearGradient id="enamelV" x1="0" y1="-12.2" x2="0" y2="0.1" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#e9dcc4"/>
+    <stop offset=".2" stop-color="#f2e9d8"/>
+    <stop offset=".5" stop-color="#faf6ef"/>
+    <stop offset=".8" stop-color="#f8f6f2"/>
+    <stop offset=".93" stop-color="#e9edf0"/>
+    <stop offset="1" stop-color="#d9e1e8"/>
+  </linearGradient>
+  <linearGradient id="enamelH" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#8a7656" stop-opacity=".34"/>
+    <stop offset=".14" stop-color="#8a7656" stop-opacity=".1"/>
+    <stop offset=".32" stop-color="#8a7656" stop-opacity="0"/>
+    <stop offset=".7" stop-color="#8a7656" stop-opacity="0"/>
+    <stop offset=".88" stop-color="#8a7656" stop-opacity=".1"/>
+    <stop offset="1" stop-color="#8a7656" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="incisalT" x1="0" y1="-3.2" x2="0" y2="0.1" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#a9bccd" stop-opacity="0"/>
+    <stop offset=".7" stop-color="#a9bccd" stop-opacity=".22"/>
+    <stop offset="1" stop-color="#93a9bd" stop-opacity=".42"/>
+  </linearGradient>
+  <radialGradient id="specG" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#fff" stop-opacity=".95"/><stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="toothSh" x="-30%" y="-30%" width="160%" height="160%">
+    <feDropShadow dx="0" dy="0.18" stdDeviation="0.22" flood-color="#5c6f86" flood-opacity=".28"/>
+  </filter>
+
+  <!-- gingiva -->
+  <linearGradient id="gumG" x1="0" y1="-16.8" x2="0" y2="-5.6" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#f3f6fa"/><stop offset=".1" stop-color="#f0dfe4"/><stop offset=".24" stop-color="#e49aa5"/>
+    <stop offset=".42" stop-color="#e48a96"/><stop offset=".76" stop-color="#ee9ea6"/><stop offset="1" stop-color="#f5b5b9"/>
+  </linearGradient>
+  <filter id="gumSh" x="-10%" y="-10%" width="120%" height="140%">
+    <feDropShadow dx="0" dy="0.22" stdDeviation="0.2" flood-color="#7a2d3a" flood-opacity=".32"/>
+  </filter>
+
+  <!-- bracket metal -->
+  <linearGradient id="wingG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#ffffff"/><stop offset=".35" stop-color="#dfe5eb"/>
+    <stop offset=".62" stop-color="#b4bec9"/><stop offset="1" stop-color="#8d98a5"/>
+  </linearGradient>
+  <linearGradient id="wingG2" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#f2f5f8"/><stop offset=".4" stop-color="#c6ced7"/>
+    <stop offset=".75" stop-color="#e9edf1"/><stop offset="1" stop-color="#9aa5b1"/>
+  </linearGradient>
+  <linearGradient id="padG" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#c9d0d8"/><stop offset="1" stop-color="#9aa4b0"/>
+  </linearGradient>
+  <linearGradient id="slotG" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#1f2731"/><stop offset=".55" stop-color="#3a4552"/><stop offset="1" stop-color="#6f7b88"/>
+  </linearGradient>
+  <linearGradient id="bodyG" x1="0" y1="0" x2="1" y2="0">
+    <stop offset="0" stop-color="#7e8996"/><stop offset=".5" stop-color="#a7b1bc"/><stop offset="1" stop-color="#7e8996"/>
+  </linearGradient>
+  <filter id="brSh" x="-40%" y="-40%" width="180%" height="180%">
+    <feDropShadow dx="0.1" dy="0.22" stdDeviation="0.16" flood-color="#3d3526" flood-opacity=".38"/>
+  </filter>
+
+  <!-- instrument steel -->
+  <linearGradient id="steelH" x1="-3.8" y1="0" x2="3.8" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#7c8794"/>
+    <stop offset=".06" stop-color="#b9c2cc"/>
+    <stop offset=".2" stop-color="#e9edf2"/>
+    <stop offset=".36" stop-color="#c3cbd4"/>
+    <stop offset=".5" stop-color="#d9dfe6"/>
+    <stop offset=".64" stop-color="#f3f5f8"/>
+    <stop offset=".8" stop-color="#c0c8d1"/>
+    <stop offset=".93" stop-color="#a3adb8"/>
+    <stop offset="1" stop-color="#77828f"/>
+  </linearGradient>
+  <linearGradient id="steelV" x1="0" y1="-1" x2="0" y2="40" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#ffffff" stop-opacity=".22"/>
+    <stop offset=".25" stop-color="#ffffff" stop-opacity="0"/>
+    <stop offset=".6" stop-color="#2b3644" stop-opacity=".12"/>
+    <stop offset="1" stop-color="#2b3644" stop-opacity=".3"/>
+  </linearGradient>
+  <linearGradient id="bladeG" x1="-0.58" y1="0" x2="0.58" y2="0" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#8d98a5"/><stop offset=".35" stop-color="#eef2f6"/>
+    <stop offset=".6" stop-color="#cdd4dc"/><stop offset="1" stop-color="#7f8a97"/>
+  </linearGradient>
+  <pattern id="brush" width="1.1" height="40" patternUnits="userSpaceOnUse">
+    <rect x="0.05" width="0.03" height="40" fill="#fff" opacity=".28"/>
+    <rect x="0.31" width="0.02" height="40" fill="#1c2633" opacity=".12"/>
+    <rect x="0.52" width="0.04" height="40" fill="#fff" opacity=".18"/>
+    <rect x="0.77" width="0.02" height="40" fill="#1c2633" opacity=".1"/>
+    <rect x="0.93" width="0.03" height="40" fill="#fff" opacity=".2"/>
+  </pattern>
+  <filter id="instSh" x="-30%" y="-10%" width="160%" height="130%">
+    <feDropShadow dx="0.32" dy="0.42" stdDeviation="0.32" flood-color="#1d2a3c" flood-opacity=".34"/>
+  </filter>
+  <clipPath id="headClip"><path id="headPathC"/></clipPath>
+
+  <!-- wash mask -->
+  <radialGradient id="wmg" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse">
+    <stop offset="0" stop-color="#000"/><stop offset=".62" stop-color="#000"/>
+    <stop offset=".86" stop-color="#fff" stop-opacity=".85"/><stop offset="1" stop-color="#fff"/>
+  </radialGradient>
+  <mask id="wm" maskUnits="userSpaceOnUse" x="0" y="0" width="960" height="990">
+    <rect width="960" height="990" fill="url(#wmg)"/>
+  </mask>
+  <radialGradient id="pinkGlow" cx=".5" cy=".5" r=".5">
+    <stop offset="0" stop-color="#ff6fae" stop-opacity=".55"/><stop offset="1" stop-color="#ff6fae" stop-opacity="0"/>
+  </radialGradient>
+  <filter id="softSh" x="-20%" y="-50%" width="140%" height="200%">
+    <feDropShadow dx="0" dy="6" stdDeviation="8" flood-color="#1b3a66" flood-opacity=".22"/>
+  </filter>
+  <filter id="prodSh" x="-10%" y="-50%" width="120%" height="220%">
+    <feDropShadow dx="0" dy="14" stdDeviation="12" flood-color="#1b3a66" flood-opacity=".3"/>
+  </filter>
+</defs>
+
+<rect width="960" height="990" fill="url(#panelG)"/>
+<rect width="960" height="990" fill="url(#panelHi)"/>
+
+<g id="world">
+  <g id="teeth"></g>
+  <path id="gum" fill="url(#gumG)" filter="url(#gumSh)"/>
+  <path id="gumHi" fill="none" stroke="#f9cfd1" stroke-width="1.6" vector-effect="non-scaling-stroke" opacity=".85"/>
+</g>
+<!-- focus wash over neighbours (screen space) -->
+<rect id="wash" width="960" height="990" fill="#eef3f8" mask="url(#wm)" opacity=".8"/>
+<g id="axis" opacity="0"><line id="axL" stroke="#2a69b0" stroke-width="2.2" stroke-dasharray="3 9" stroke-linecap="round"/>
+  <text id="axT" font-size="20" font-weight="700" fill="#2a69b0" letter-spacing="2">EJE DEL DIENTE</text></g>
+<g id="world2">
+  <g id="inst" filter="url(#instSh)">
+    <path id="headPath" fill="url(#steelH)"/>
+    <g clip-path="url(#headClip)">
+      <rect x="-5" y="-1" width="10" height="130" fill="url(#brush)"/>
+      <rect x="-5" y="-1" width="10" height="130" fill="url(#steelV)"/>
+      <rect id="bladeShade" x="-0.6" y="-1" width="1.2" height="6.9" fill="url(#bladeG)" opacity=".75"/>
+      <path id="bevel" fill="none" stroke="#ffffff" stroke-opacity=".55" stroke-width="0.28"/>
+      <path id="bevel2" fill="none" stroke="#3e4a58" stroke-opacity=".5" stroke-width="0.09"/>
+      <!-- side facet line like the real head chamfer -->
+      <line x1="-3.3" y1="7.0" x2="-3.3" y2="16.4" stroke="#5f6b79" stroke-opacity=".35" stroke-width="0.06"/>
+      <line x1="-3.2" y1="7.0" x2="-3.2" y2="16.4" stroke="#ffffff" stroke-opacity=".5" stroke-width="0.07"/>
+      <g fill="#28313c" fill-opacity=".82" style="font-family:'Liberation Sans',Arial,Helvetica,sans-serif;font-weight:400">
+        <text transform="translate(1.72,9.5) rotate(90)" font-size="1.5" text-anchor="middle" dominant-baseline="central">4.0</text>
+        <text transform="translate(-1.72,9.5) rotate(90)" font-size="1.5" text-anchor="middle" dominant-baseline="central">4.5</text>
+        <text transform="translate(0.15,31) rotate(90)" font-size="1.7" text-anchor="middle" dominant-baseline="central">.022</text>
+      </g>
+    </g>
+  </g>
+</g>
+
+
+<!-- annotations (screen space) -->
+<g id="ann">
+  <text id="viewLbl" x="40" y="62" font-size="22" font-weight="700" fill="#7088a6" letter-spacing="2.5">VISTA LABIAL · INCISIVO CENTRAL</text>
+
+  <g id="slotHi" opacity="0">
+    <rect id="slotHiR" fill="none" stroke="#ff5fa6" stroke-width="3" rx="6"/>
+    <rect id="slotHiG" fill="url(#pinkGlow)"/>
+  </g>
+  <g id="contact" opacity="0">
+    <circle id="ctGlow" r="34" fill="url(#pinkGlow)"/>
+    <circle id="ctRing" r="16" fill="none" stroke="#ff5fa6" stroke-width="3"/>
+    <circle id="ctDot" r="6" fill="#ff5fa6"/>
+  </g>
+
+  <g id="dim" opacity="1">
+    <line id="ext1" stroke="#2a69b0" stroke-width="2" stroke-dasharray="7 7" opacity=".85"/>
+    <line id="ext2" stroke="#2a69b0" stroke-width="2" stroke-dasharray="7 7" opacity=".85"/>
+    <line id="dline" stroke="#2a69b0" stroke-width="3.2" stroke-linecap="round"/>
+    <line id="tick1" stroke="#2a69b0" stroke-width="3.2" stroke-linecap="round"/>
+    <line id="tick2" stroke="#2a69b0" stroke-width="3.2" stroke-linecap="round"/>
+    <path id="arr1" fill="#2a69b0"/>
+    <path id="arr2" fill="#2a69b0"/>
+    <g id="dlab" filter="url(#softSh)">
+      <rect id="dlabR" width="188" height="72" rx="36" fill="#2a69b0"/>
+      <text id="dlabT" font-size="38" font-weight="800" fill="#fff" text-anchor="middle" dominant-baseline="central">4.0 mm</text>
+    </g>
+  </g>
+
+  <g id="align" opacity="0">
+    <line id="incLine" stroke="#8ea4bd" stroke-width="2.4" stroke-dasharray="10 9"/>
+    <line id="slotLine" stroke="#ff4f9d" stroke-width="3.4" stroke-dasharray="14 9" stroke-linecap="round"/>
+    <g id="chips"></g>
+    <g id="pulses"></g>
+  </g>
+
+  <g id="prod" opacity="0">
+    <image id="prodImg" href="inst_h.png" width="900" height="133" filter="url(#prodSh)"/>
+    <text id="prodT" x="480" font-size="22" font-weight="700" fill="#5d7697" text-anchor="middle" letter-spacing="3">POSICIONADOR RECTO · ACERO JAPONÉS · .022</text>
+  </g>
+</g>
+</svg>
+</div>
+
+<div class="a" id="caps">
+  <div class="cap" id="c1"><div class="k">PASO 1</div><div class="m">Inserte la lámina en el slot</div><div class="s">La lámina central entra en el slot del bracket</div></div>
+  <div class="cap" id="c2"><div class="k">PASO 2</div><div class="m">Apoye el hombro en el borde incisal</div><div class="s">Instrumento paralelo al eje del diente</div></div>
+  <div class="cap" id="c3"><div class="k">RESULTADO</div><div class="m">Altura exacta: <b>4.0 mm</b></div><div class="s">Del borde incisal al centro del slot</div></div>
+  <div class="cap" id="c4"><div class="k">PRECISIÓN REPETIBLE</div><div class="m">La misma altura, diente tras diente</div><div class="s">Brackets alineados en toda la arcada</div></div>
+</div>
+
+<script>
+(function(){
+const NS='http://www.w3.org/2000/svg';
+const $=id=>document.getElementById(id);
+const clamp=(v,a=0,b=1)=>Math.max(a,Math.min(b,v));
+const seg=(t,a,b)=>clamp((t-a)/(b-a));
+const eo=x=>1-Math.pow(1-x,3);
+const eo4=x=>1-Math.pow(1-x,4);
+const eio=x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2;
+const ei=x=>x*x*x;
+const lerp=(a,b,x)=>a+(b-a)*x;
+function el(tag,attrs,parent){const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e;}
+
+// closed Catmull-Rom spline -> cubic bezier path
+function crPath(p,closed=true,ten=0.5){
+  const n=p.length;let d=`M${p[0][0]},${p[0][1]}`;
+  const g=i=>closed?p[(i+n)%n]:p[clamp(i,0,n-1)];
+  const m=closed?n:n-1;
+  for(let i=0;i<m;i++){
+    const p0=g(i-1),p1=g(i),p2=g(i+1),p3=g(i+2);
+    const c1=[p1[0]+(p2[0]-p0[0])*ten/3,p1[1]+(p2[1]-p0[1])*ten/3];
+    const c2=[p2[0]-(p3[0]-p1[0])*ten/3,p2[1]-(p3[1]-p1[1])*ten/3];
+    d+=`C${c1[0].toFixed(3)},${c1[1].toFixed(3)} ${c2[0].toFixed(3)},${c2[1].toFixed(3)} ${p2[0].toFixed(3)},${p2[1].toFixed(3)}`;
+  }
+  return d+(closed?'Z':'');
+}
+
+// ---------- tooth outlines (local mm; incisal edge centre = 0,0; mesial = +x; up = -y)
+const CENTRAL=[[3.5,0.02],[3.98,-0.06],[4.3,-0.45],[4.42,-1.6],[4.38,-3.6],[4.2,-5.8],[3.9,-7.9],[3.6,-9.9],[3.44,-11.8],[3.4,-13.6],
+  [0,-13.9],[-3.4,-13.6],[-3.46,-11.8],[-3.7,-9.9],[-4.08,-7.6],[-4.35,-5.2],[-4.35,-3.2],[-4.12,-1.6],[-3.62,-0.52],[-2.85,-0.08],[-1.2,0.06],[1.4,0.07]];
+const LATERAL=[[2.55,0.0],[3.05,-0.32],[3.28,-1.4],[3.24,-3.5],[3.02,-5.8],[2.7,-7.9],[2.46,-9.8],[2.36,-12.5],[0,-12.9],[-2.36,-12.5],[-2.52,-9.8],[-2.94,-7.3],
+  [-3.26,-4.8],[-3.22,-2.7],[-2.9,-1.15],[-2.25,-0.28],[-1.1,0.02],[1.0,0.04]];
+const TEETH=[ // x centre, type, mirror (right side teeth mirrored so mesial faces midline), foreshortening
+  {x:-12.0,t:'L',m:1,sx:.9},{x:-4.45,t:'C',m:1,sx:1},{x:4.45,t:'C',m:-1,sx:1},{x:12.0,t:'L',m:-1,sx:.9}];
+const FOCUS=1;
+const SLOT_Y=-4.0; // final slot height (mm above incisal edge)
+
+// build bracket group (local: slot centre origin)
+function bracket(parent,w){
+  const g=el('g',{},parent);
+  const hw=w/2;
+  el('rect',{x:-hw-0.22,y:-1.98,width:w+0.44,height:3.96,rx:0.6,fill:'url(#padG)',stroke:'#7d8894','stroke-width':1,'vector-effect':'non-scaling-stroke'},g);
+  // central body (between twin wings)
+  el('rect',{x:-0.5,y:-1.45,width:1.0,height:2.9,rx:0.18,fill:'url(#bodyG)'},g);
+  const wing=(x0,y0,ww,hh,flip)=>{
+    el('rect',{x:x0,y:y0,width:ww,height:hh,rx:0.28,fill:flip?'url(#wingG2)':'url(#wingG)',stroke:'#6f7a87','stroke-width':1,'vector-effect':'non-scaling-stroke'},g);
+  };
+  const ww=hw-0.5;
+  wing(-hw,-1.72,ww,1.44,0); wing(0.5,-1.72,ww,1.44,0);
+  wing(-hw,0.28,ww,1.44,1); wing(0.5,0.28,ww,1.44,1);
+  // tie-wing undercut lines
+  for(const x0 of [-hw,0.5]){
+    el('rect',{x:x0+0.12,y:-1.42,width:ww-0.24,height:0.08,fill:'#7d8894',opacity:.55},g);
+    el('rect',{x:x0+0.12,y:1.34,width:ww-0.24,height:0.08,fill:'#7d8894',opacity:.55},g);
+    el('rect',{x:x0+0.18,y:-1.62,width:ww-0.5,height:0.12,rx:0.06,fill:'#fff',opacity:.85},g);
+  }
+  // slot channel
+  el('rect',{x:-hw-0.02,y:-0.28,width:w+0.04,height:0.56,fill:'url(#slotG)'},g);
+  el('rect',{x:-hw,y:0.2,width:w,height:0.05,fill:'#c9d2db',opacity:.7},g);
+  return g;
+}
+
+// build teeth
+const teethG=$('teeth');
+const toothNodes=[];
+TEETH.forEach((T,i)=>{
+  const g=el('g',{transform:`translate(${T.x},0) scale(${T.m*T.sx},1)`},teethG);
+  const pts=T.t==='C'?CENTRAL:LATERAL;
+  const d=crPath(pts);
+  el('path',{d,fill:'url(#enamelV)',filter:'url(#toothSh)'},g);
+  el('path',{d,fill:'url(#enamelH)'},g);
+  el('path',{d,fill:'url(#incisalT)'},g);
+  // lobes / developmental depressions
+  const w=T.t==='C'?4.4:3.3;
+  for(const s of [-0.34,0.3]){
+    el('path',{d:`M${s*w},-11.2 C${s*w*1.04},-7.5 ${s*w*1.08},-4.2 ${s*w*1.0},-1.7`,fill:'none',stroke:'#b6a27f','stroke-width':0.22,opacity:.10,'stroke-linecap':'round'},g);
+  }
+  // specular highlights
+  el('ellipse',{cx:-0.33*w,cy:-6.4,rx:0.55*w*0.42,ry:3.9,fill:'url(#specG)',opacity:.55},g);
+  el('ellipse',{cx:0.38*w,cy:-5.4,rx:0.22*w*0.42*1.6,ry:2.6,fill:'url(#specG)',opacity:.35},g);
+  // outline
+  el('path',{d,fill:'none',stroke:'#a8977a','stroke-width':1.6,'vector-effect':'non-scaling-stroke',opacity:.75},g);
+  // bracket
+  const bw=T.t==='C'?3.6:3.0;
+  const bg=el('g',{transform:`translate(0,${SLOT_Y})`,filter:'url(#brSh)'},g);
+  bracket(bg,bw);
+  toothNodes.push({g,bg,T});
+});
+
+// gingiva: scalloped margin with pointed papillae
+(function(){
+  const pap=[[-17.6,-6.9],[-8.95,-5.9],[0,-6.2],[8.95,-5.9],[17.6,-6.9]];
+  const zen=[[-12.3,-9.7],[-4.85,-10.8],[4.85,-10.8],[12.3,-9.7]];
+  let d=`M-30,-40 L-30,-8.2 L${pap[0][0]-3},-8.4 Q${pap[0][0]-1},-7.6 ${pap[0][0]},${pap[0][1]}`;
+  let hi=`M${pap[0][0]},${pap[0][1]}`;
+  for(let i=0;i<4;i++){
+    const A=pap[i],B=pap[i+1],Z=zen[i],w=B[0]-A[0];
+    const s=`C${A[0]+0.1*w},${A[1]-2.6} ${Z[0]-0.33*w},${Z[1]} ${Z[0]},${Z[1]} C${Z[0]+0.33*w},${Z[1]} ${B[0]-0.1*w},${B[1]-2.6} ${B[0]},${B[1]}`;
+    d+=s; hi+=s;
+  }
+  d+=`Q${pap[4][0]+1},-7.6 ${pap[4][0]+3},-8.4 L30,-8.2 L30,-40Z`;
+  $('gum').setAttribute('d',d);
+  $('gumHi').setAttribute('d',hi);
+})();
+
+// ---------- instrument head outline (local: origin = working point at slot centre, blade pointing up)
+function headD(){
+  const H=3.72, bw=0.56, nr=(2.52-bw)/2, nc=bw+nr, ny=5.75;
+  const tr=4.0, tl=4.5; // tine tip depths: right tine = 4.0 shoulder, left tine = 4.5 shoulder
+  const shaft=2.25, hb=17.0;
+  let d='';
+  d+=`M${-bw},${ny}`;
+  d+=`L${-bw},0.32 C${-bw},-0.12 ${-bw*0.55},-0.34 0,-0.34 C${bw*0.55},-0.34 ${bw},-0.12 ${bw},0.32`;
+  d+=`L${bw},${ny} A${nr},${nr} 0 0 0 ${nc+nr},${ny}`;
+  d+=`L${nc+nr+0.1},${tr+0.95} L${3.2},${tr+0.03} Q${3.33},${tr-0.05} ${3.45},${tr+0.06} L${H},${tr+0.36}`;
+  d+=`L${H},${hb} C${H},${hb+1.6} ${shaft},${hb+1.4} ${shaft},${hb+3.4} L${shaft},130 L${-shaft},130 L${-shaft},${hb+3.4}`;
+  d+=`C${-shaft},${hb+1.4} ${-H},${hb+1.6} ${-H},${hb} L${-H},${tl+0.42}`;
+  d+=`L${-3.45},${tl+0.06} Q${-3.33},${tl-0.05} ${-3.2},${tl+0.03} L${-(nc+nr+0.1)},${tl+0.95} L${-(nc+nr)},${ny}`;
+  d+=`A${nr},${nr} 0 0 0 ${-bw},${ny}Z`;
+  return d;
+}
+const HD=headD();
+['headPath','headPathC','bevel','bevel2'].forEach(id=>$(id).setAttribute('d',HD));
+
+// chips + pulses for the final alignment view
+const chipsG=$('chips'),pulG=$('pulses');
+const chipNodes=TEETH.map(()=>{
+  const g=el('g',{opacity:0},chipsG);
+  el('rect',{x:-56,y:-22,width:112,height:44,rx:22,fill:'#2a69b0'},g);
+  const tx=el('text',{x:0,y:1,'font-size':24,'font-weight':800,fill:'#fff','text-anchor':'middle','dominant-baseline':'central'},g);
+  tx.textContent='4.0 mm';
+  const p=el('rect',{fill:'none',stroke:'#ff4f9d','stroke-width':3,rx:5,opacity:0},pulG);
+  return {g,p};
+});
+
+// ---------- camera
+const CX=480, CY=495;
+let cam={s:48,x:-1.6,y:-2.4};
+const W2S=(x,y)=>[CX+(x-cam.x)*cam.s, CY+(y-cam.y)*cam.s];
+function setAttrs(e,o){for(const k in o)e.setAttribute(k,o[k]);}
+function line(id,x1,y1,x2,y2){setAttrs($(id),{x1,y1,x2,y2});}
+
+// ---------- render
+window.render=function(t){
+  // header / card intro
+  const tin=eo(seg(t,0,0.5));
+  $('hdr').style.opacity=tin; $('hdr').style.transform=`translateY(${(1-tin)*18}px)`;
+  const cin=eo(seg(t,0.05,0.6));
+  $('card').style.opacity=cin; $('card').style.transform=`translateY(${(1-cin)*36}px)`;
+
+  // camera pull-back
+  const pb=eio(seg(t,5.25,6.45));
+  cam={s:lerp(48,28.5,pb), x:lerp(-1.6,0,pb), y:lerp(-2.4,-0.1,pb)};
+  const WT=`translate(${CX},${CY}) scale(${cam.s}) translate(${-cam.x},${-cam.y})`;
+  $('world').setAttribute('transform',WT); $('world2').setAttribute('transform',WT);
+
+  // bracket of focus tooth: placed 0.7 mm too incisal, carried to 4.0 by the instrument
+  const push=eio(seg(t,2.25,3.25));
+  const bY=-3.3-0.7*push;
+  toothNodes[FOCUS].bg.setAttribute('transform',`translate(0,${bY})`);
+
+  // instrument (world y of working point)
+  const rise=eo4(seg(t,0.2,1.75));
+  const wd=ei(seg(t,4.95,5.6));
+  let iy=(t<2.25)? -3.3+12.5*(1-rise) : bY;
+  iy+=wd*10;
+  const ix=TEETH[FOCUS].x;
+  $('inst').setAttribute('transform',`translate(${ix},${iy})`);
+  $('inst').setAttribute('opacity',(1-seg(t,5.2,5.6)).toFixed(3));
+
+  // focus wash (neighbour teeth dimmed during close-up)
+  {
+    const [wx,wy]=W2S(TEETH[FOCUS].x,-4.6);
+    const rx=4.45*1.12*cam.s/0.62, ry=9.6*cam.s/0.62;
+    $('wmg').setAttribute('gradientTransform',`translate(${wx},${wy}) scale(${rx},${ry})`);
+    $('wash').setAttribute('opacity',(0.8*(1-eio(seg(t,5.3,6.1)))).toFixed(3));
+  }
+  // long-axis guide (step 2)
+  {
+    const [ax,ay0]=W2S(TEETH[FOCUS].x,-12.4), [,ay1]=W2S(TEETH[FOCUS].x,-6.3);
+    const k=eo(seg(t,2.35,2.9));
+    line('axL',ax,ay1,ax,lerp(ay1,ay0,k));
+    setAttrs($('axT'),{x:ax+16,y:ay0+30});
+    $('axis').setAttribute('opacity',(seg(t,2.35,2.5)*(1-seg(t,3.6,3.95))).toFixed(3));
+  }
+
+  // view label
+  $('viewLbl').textContent = t<5.6 ? 'VISTA LABIAL · INCISIVO CENTRAL' : 'VISTA LABIAL · SECTOR ANTERIOR';
+  const vl = t<5.6 ? (eo(seg(t,0.3,0.8))*(1-seg(t,2.15,2.4))) : eo(seg(t,5.75,6.2));
+  $('viewLbl').setAttribute('opacity',vl.toFixed(3));
+
+  // slot highlight (engagement)
+  {
+    const [sx,sy]=W2S(ix,bY);
+    const bw=3.6*cam.s, sh=0.56*cam.s;
+    setAttrs($('slotHiR'),{x:sx-bw/2-8,y:sy-sh/2-6,width:bw+16,height:sh+12});
+    setAttrs($('slotHiG'),{x:sx-bw/2-60,y:sy-60,width:bw+120,height:120});
+    const a=seg(t,1.62,1.85)*(1-0.45*seg(t,2.2,2.6))*(1-seg(t,4.9,5.3));
+    $('slotHi').setAttribute('opacity',a.toFixed(3));
+  }
+  // contact pulse at 4.0 shoulder
+  {
+    const [cx_,cy_]=W2S(ix+3.33,0);
+    const k=seg(t,3.2,3.95);
+    setAttrs($('ctRing'),{cx:cx_,cy:cy_,r:10+40*eo(k),opacity:(1-k).toFixed(3)});
+    setAttrs($('ctGlow'),{cx:cx_,cy:cy_});
+    setAttrs($('ctDot'),{cx:cx_,cy:cy_,r:6});
+    const a=seg(t,3.18,3.3)*(1-seg(t,4.9,5.25));
+    $('contact').setAttribute('opacity',a.toFixed(3));
+  }
+  // dimension line (incisal edge -> slot centre)
+  {
+    const dx=ix+3.72+1.25;
+    const [px,y0]=W2S(dx,0), [,y1]=W2S(dx,SLOT_Y);
+    const [e1x]=W2S(ix+3.5,0), [e2x]=W2S(ix+1.95,0);
+    const ke=eo(seg(t,3.5,3.9));
+    line('ext1',e1x,y0,lerp(e1x,px+18,ke),y0);
+    line('ext2',e2x,y1,lerp(e2x,px+18,ke),y1);
+    $('ext1').setAttribute('opacity',(0.85*seg(t,3.5,3.6)).toFixed(3));
+    $('ext2').setAttribute('opacity',(0.85*seg(t,3.5,3.6)).toFixed(3));
+    const kd=eio(seg(t,3.75,4.35));
+    line('dline',px,y0-4,px,lerp(y0-4,y1+4,kd));
+    $('dline').setAttribute('opacity',kd>0?1:0);
+    const kt=seg(t,3.75,3.85), kt2=seg(t,4.3,4.4);
+    line('tick1',px-12,y0,px+12,y0); $('tick1').setAttribute('opacity',kt);
+    line('tick2',px-12,y1,px+12,y1); $('tick2').setAttribute('opacity',kt2);
+    $('arr1').setAttribute('d',`M${px},${y0-1} l-8,-15 l16,0z`); $('arr1').setAttribute('opacity',kt);
+    $('arr2').setAttribute('d',`M${px},${y1+1} l-8,15 l16,0z`); $('arr2').setAttribute('opacity',kt2);
+    const kl=eo(seg(t,4.2,4.65));
+    $('dlab').setAttribute('transform',`translate(${px+22+(1-kl)*-14},${(y0+y1)/2-36})`);
+    $('dlab').setAttribute('opacity',kl.toFixed(3));
+    $('dlabT').setAttribute('x',94); $('dlabT').setAttribute('y',37);
+    $('dim').setAttribute('opacity',(1-seg(t,5.1,5.45)).toFixed(3));
+  }
+  // final alignment
+  {
+    const ka=seg(t,6.05,6.25);
+    $('align').setAttribute('opacity',ka.toFixed(3));
+    const xL=-16.0, xR=16.0;
+    const [ax0,ay]=W2S(xL,SLOT_Y), [ax1]=W2S(xR,SLOT_Y), [,iy0]=W2S(0,0);
+    const kl=eio(seg(t,6.1,6.95));
+    line('slotLine',ax0,ay,lerp(ax0,ax1,kl),ay);
+    line('incLine',ax0,iy0,lerp(ax0,ax1,kl),iy0);
+    $('incLine').setAttribute('opacity',.85);
+    TEETH.forEach((T,i)=>{
+      const [tx,ty]=W2S(T.x,1.55);
+      const xi=(T.x-xL)/(xR-xL);
+      const tt=6.1+0.85*xi; // time the line reaches this tooth
+      const kc=eo(seg(t,tt,tt+0.35));
+      const n=chipNodes[i];
+      n.g.setAttribute('transform',`translate(${tx},${ty+ (1-kc)*10})`);
+      n.g.setAttribute('opacity',kc.toFixed(3));
+      const [bx,by]=W2S(T.x,SLOT_Y);
+      const bw=(T.t==='C'?3.6:3.0)*T.sx*cam.s, sh=0.56*cam.s;
+      const kp=seg(t,tt-0.05,tt+0.55);
+      setAttrs(n.p,{x:bx-bw/2-6-kp*6,y:by-sh/2-5-kp*6,width:bw+12+kp*12,height:sh+10+kp*12,opacity:(kp>0?(1-kp)*0.95:0).toFixed(3)});
+    });
+  }
+  // product signature
+  {
+    const k=eo(seg(t,6.45,7.2));
+    const yb=672;
+    $('prodImg').setAttribute('x',30); $('prodImg').setAttribute('y',yb+(1-k)*22);
+    $('prodT').setAttribute('y',yb+133+58+(1-k)*22);
+    $('prod').setAttribute('opacity',k.toFixed(3));
+  }
+
+  // captions
+  const caps=[['c1',0.3,2.2],['c2',2.2,3.78],['c3',3.78,5.28],['c4',5.28,99]];
+  caps.forEach(([id,a,b])=>{
+    const kin=eo(seg(t,a,a+0.38)), kout=seg(t,b-0.24,b);
+    const o=kin*(1-kout);
+    const e=$(id); e.style.opacity=o.toFixed(3);
+    e.style.transform=`translateY(${(1-kin)*16 - kout*10}px)`;
+  });
+};
+render(0);
+})();
+</script>
+</body></html>

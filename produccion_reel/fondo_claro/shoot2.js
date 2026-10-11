@@ -1,4 +1,4 @@
-const { chromium } = require('../build/node_modules/playwright');
+const { chromium } = require(require('path').join(__dirname,'../node_modules/playwright'));
 const fs=require('fs');
 (async()=>{
  const [,,mode,out]=process.argv; const TM=JSON.parse(fs.readFileSync(__dirname+'/timing.json'));

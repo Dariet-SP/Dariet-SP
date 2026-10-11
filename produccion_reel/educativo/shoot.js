@@ -1,5 +1,5 @@
 // node shoot.js stills <outdir> t1,t2,...  |  node shoot.js frames <outdir> <n> <fps>
-const { chromium } = require('/tmp/claude-0/-home-user-Dariet-SP/f7fc9ee6-7f70-5c95-8f1e-201b5d4b0ea7/scratchpad/build/node_modules/playwright');
+const { chromium } = require(require('path').join(__dirname,'../node_modules/playwright'));
 const fs = require('fs');
 (async () => {
   const [, , mode, out, arg3, arg4] = process.argv;

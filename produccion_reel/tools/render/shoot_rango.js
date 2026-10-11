@@ -1,4 +1,4 @@
-const { chromium } = require('../build/node_modules/playwright');
+const { chromium } = require(require('path').join(__dirname,'../../node_modules/playwright'));
 (async()=>{
  const [,,html,out,spec]=process.argv;
  const b=await chromium.launch(); const p=await b.newPage({viewport:{width:1080,height:1920}});

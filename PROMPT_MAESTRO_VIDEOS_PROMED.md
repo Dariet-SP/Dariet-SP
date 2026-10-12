@@ -29,7 +29,7 @@ Usa **solo** estos datos o los que el cliente confirme. **Nunca inventes datos, 
 - **En el Perú desde 2010** con **Orthoplace S.A.C.** (orthoplaceonline.com). Más de 300 modelos.
 - **Garantía de 1 año** en uso normal contra rotura, corrosión y falla de la articulación.
 - **Códigos:** `PI-xxxx`. Hay "Modelos exclusivos Orthoplace" con diseño propio, que se piden por nombre.
-- **Logo:** una "P" azul en degradado con el texto "PROMED instruments" en rosado. Sobre fondos azules ponlo **dentro de una tarjeta blanca redondeada**.
+- **Logo:** una "P" azul en degradado con el texto "PROMED instruments" en rosado. **Nunca lo pongas dentro de una tarjeta o cuadro blanco**: el cliente lo rechazó ("se ve feo"). Va directo sobre un fondo claro (blanco o celeste muy claro), donde la "P" azul se lee bien; sobre azul medio u oscuro pierde contraste. La regla vale para todos los logos (PROMED, Orthoplace, OP Clear).
 
 ### Líneas del catálogo (índice)
 | Sección | Página | Notas |
@@ -63,6 +63,13 @@ Usa **solo** estos datos o los que el cliente confirme. **Nunca inventes datos, 
 10. **Tomas realistas.** Una animación ilustrada sola se ve como "material educativo". Para anuncios, prioriza **fotos y video reales** del producto. La versión ilustrada se usa como video "educativo" aparte.
 11. **Las fotos deben verse limpias.** Que no se note el recorte ni los píxeles. Usa los pasos de "lijado" de la sección 7 (super-resolución con IA + recorte con BiRefNet).
 12. **El audio de referencia de la mamá del cliente** era una explicación hablada informal. **Entiende la idea y reordénala; no la copies literal.**
+13. **Primero lo que resuelve, después el producto.** El video del Marcotte "7 en 1" no enganchó porque abrió vendiendo el producto. Orden obligatorio:
+    1. Gancho con el resultado o con la pregunta clínica.
+    2. Parte educativa: qué resuelve y cómo se usa, con el producto en pantalla pero **sin nombrarlo todavía**.
+    3. Si hay escenas en boca o de mecánica clínica, un **aviso de contenido educativo**: no es un manual de uso ni una guía clínica.
+    4. Recién entonces el nombre, los atributos, el precio y el cierre.
+
+    El producto se ve en todo el video, aunque se nombre al final.
 
 ---
 
@@ -75,7 +82,7 @@ Usa **solo** estos datos o los que el cliente confirme. **Nunca inventes datos, 
 - **Producto:** recortado sobre fondo transparente, con **sombra suave** y **barridos de luz** sobre el acero (una máscara con la silueta del producto y un degradado que lo cruza).
 - **Movimiento:** calmado y profesional, con ease-out, sin rebotes exagerados. Los títulos pueden ir detrás del producto ("texto detrás del objeto").
 - **No uses texto con contorno (stroke)** en Montserrat: se ven líneas internas en las letras. Usa texto sólido en celeste.
-- **Cierre:** logo en tarjeta blanca, "DISTRIBUIDO EN EL PERÚ POR" · **Orthoplace S.A.C.** · orthoplaceonline.com.
+- **Cierre:** logo directo sobre fondo claro, **sin tarjeta blanca**, "DISTRIBUIDO EN EL PERÚ POR" · **Orthoplace S.A.C.** · orthoplaceonline.com.
 
 ---
 
@@ -166,6 +173,8 @@ pip install numpy pillow scipy soundfile onnxruntime "rembg[cpu]" sherpa-onnx
 ## 8. QA antes de entregar (obligatorio)
 
 - [ ] **Datos:** cada dato en pantalla o en voz está en el catálogo o lo confirmó el cliente. Sin "más macizo", "robusto", "hecho para durar" ni "a solo".
+- [ ] **Orden:** el nombre del producto aparece recién después de la parte que muestra qué resuelve (regla 13 de la sección 3). Si hay escenas en boca, está el aviso educativo.
+- [ ] **Logos sin tarjeta ni cuadro blanco.**
 - [ ] **Precio** correcto en voz y en pantalla, sin números intermedios.
 - [ ] **Sincronía:** cada texto aparece con su frase de voz o un poco antes.
 - [ ] **Zonas seguras** respetadas (y 220–1600; nada en x > 960 entre y 1100–1650).
